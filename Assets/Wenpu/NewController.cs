@@ -120,6 +120,7 @@ public class NewController : MonoBehaviour {
         if (collision.transform.CompareTag("Ground"))
         {
             isGrouned = true;
+            transform.SetParent(collision.transform);
         }
     }
     void OnCollisionExit(Collision collision)
@@ -127,6 +128,7 @@ public class NewController : MonoBehaviour {
         if (collision.transform.CompareTag("Ground"))
         {
             isGrouned = false;
+            transform.SetParent(null);
         }
     }
 
