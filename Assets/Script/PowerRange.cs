@@ -52,8 +52,8 @@ public class PowerRange : MonoBehaviour
                     //當下偵測的物件狀態變化
                     cols[i].GetComponent<gear>().canControl = true;
                     cols[i].GetComponent<MeshRenderer>().material.color = Color.red;
-                    Debug.Log(cols[i].gameObject.name);
-                    Debug.Log(cols[i].GetComponent<gear>().canControl);
+                    //Debug.Log(cols[i].gameObject.name);
+                    //Debug.Log(cols[i].GetComponent<gear>().canControl);
                 }
             perviousCols = cols;
         }

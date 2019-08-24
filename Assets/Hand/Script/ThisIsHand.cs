@@ -18,6 +18,19 @@ public class ThisIsHand : MonoBehaviour
     public bool IsUp;
     public Vector3 originalPos;
     [SerializeField] Vector3 _targetPosition;
+    [Range(0.5f, 10f)]public float CanBeAttackTime;
+    public bool IsCanBeAttack;
+    public bool IsPlayerAttack;
+
+    private static ThisIsHand _instance;
+    public static ThisIsHand Instance
+    {
+        get
+        {
+            if (_instance == null) _instance = GameObject.FindObjectOfType<ThisIsHand>();
+            return _instance;
+        }
+    }
     public enum HandState
     {
         Idle,
@@ -66,10 +79,53 @@ public class ThisIsHand : MonoBehaviour
                 StartCoroutine(MoveDown());
             }
         }
+        DebugFakeAttack();
+        if (animEvent.IsCanBeAttack && IsPlayerAttack)
+        {
+      
+            
+            Debug.LogError("HandToDo:被玩家攻擊");
+            anim.SetBool("OnAttack", true);
+        }
 
-
+        IsPlayerAttack = false;
     }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+            IsPlayerAttack = true;
+    }
+
+    public void DebugFakeAttack()
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            IsPlayerAttack = true;
+
+            
+        }
+ 
+    }
+
+    public void StartMoveDown()
+    {
+        StartCoroutine(MoveDown());
+    }
+
+    //public IEnumerator CountDown(float time)
+    //{
+    //IsCanBeAttack = true;
+    //float targetTime = time;
+    //while(targetTime >=0)
+    //{
+    //Debug.Log($"CountDown{targetTime}");
+    //targetTime -= Time.deltaTime;
+    //yield return null;
+    //}
+
+    //IsCanBeAttack = false;
+    //}
 
 
 

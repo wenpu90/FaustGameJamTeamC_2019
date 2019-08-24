@@ -16,12 +16,19 @@ public class HandAnimEvent : MonoBehaviour
     public Vector3 dangerEffOffset;
     public GameObject[] soundPrefab;
     public GameObject[] particlePrefab;
+    public bool IsCanBeAttack;
+    public Animator anim;
+
 
     // Start is called before the first frame update
     void Start()
     {
         if (target == null) target = GameObject.FindGameObjectWithTag("Player").transform;
         if (parent == null) parent = this.transform.parent;
+    }
+    private void OnEnable()
+    {
+        if (anim == null) anim = GetComponent<Animator>();
     }
 
     public void SetAttackingTrue()
@@ -44,6 +51,19 @@ public class HandAnimEvent : MonoBehaviour
 
     }
 
+    public void IsCanBeAttackTrue()
+    {
+        IsCanBeAttack = true;
+
+    }
+    public void IsCanBeAttackFalse()
+    {
+        IsCanBeAttack = false;
+        anim.SetBool("OnAttack",false);
+        Debug.LogError("fff");
+
+    }
+
     private void HandSlamEvent()
     {
         particles[0].Play(true);
@@ -51,6 +71,10 @@ public class HandAnimEvent : MonoBehaviour
         
     }
 
+    public void HandMoveDown()
+    {
+        ThisIsHand.Instance.StartMoveDown();
+    }
     private IEnumerator CameraShake()
     {
         var cam = Camera.main;
