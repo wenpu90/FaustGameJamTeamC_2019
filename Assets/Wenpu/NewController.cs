@@ -18,6 +18,7 @@ public class NewController : MonoBehaviour {
 	Quaternion targetRotation;
 	Transform cam;
 	public Animator anim;
+    public GameObject damageDealer;
 
     public bool canMove = true;
 	void Start () {
@@ -95,6 +96,7 @@ public class NewController : MonoBehaviour {
         {
             anim.SetTrigger("attack");
             canMove = false;
+            damageDealer.SetActive(true);
             Invoke("UnLockMovement", 0.7f);
 
         }
@@ -103,6 +105,7 @@ public class NewController : MonoBehaviour {
     {
         canMove = true;
         CancelInvoke("UnLockMovement");
+        damageDealer.SetActive(false);
     }
     void RigidBodyInitialize()
     {
