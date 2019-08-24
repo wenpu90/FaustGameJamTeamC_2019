@@ -47,10 +47,10 @@ public class ThisIsHand : MonoBehaviour
             SlamAttack();
         }
         //if(Input.GetMouseButtonDown(0) && IsUp==false)
-        if(Input.GetMouseButtonDown(0) && IsUp==false)
+        if(gear.CanHandMove && IsUp==false)
         {
+            gear.CanHandMove = false;
             StartCoroutine(MoveUp(()=>SlamAttack()));
-            
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Default"))

@@ -5,47 +5,55 @@ using UnityEngine.EventSystems;
 
 public class gear : MonoBehaviour, IPointerClickHandler
 {
-    public float start_speed=1.0f;
+    public bool canControl=false;
+    public static bool CanHandMove = false;
+    public float start_speed;
     bool is_out = false;
     public static bool isflyout = false;
 
     float radian = 0; // 弧度
     Vector3 oldPos; // 开始时候的坐标
-    float perRadian = 0.03f; // 每次变化的弧度(變化速度)，最好小於0.07
-    float radius = 0.2f; //高度變化，最好小於0.3
+    float perRadian; // 每次变化的弧度(變化速度)，最好小於0.07
+    float radius; //高度變化，最好小於0.3
     int plus_minus = 1;
 
     void Start()
     {
+        start_speed = Random.Range(0f, 2f);
         radius = Random.Range(0.05f, 0.3f);
-        perRadian= Random.Range(0.03f, 0.07f);
+        perRadian= Random.Range(1f, 3f);
         oldPos = transform.position; // 保存最初的位置
         if (Random.Range(-5, 5) % 2 == 1)
             plus_minus = -1;
     }
 
     private float dTime = 0;
+    public float mouseWeelSpeed = 1.0f;
     void Update()
     {
         if (!is_out)
         {
-            //////////////////////////////////////////////////////////////////////////////////////////
+            //transform.position = new Vector3(transform.position.x, Mathf.PingPong(Time.time, Random.Range(0f, 4f)), transform.position.z);
 
-            radian += perRadian; // 弧度每次加0.03
+            //////////////////////////////////////////////////////////////////////////////////////////
+            
+            radian += perRadian * Time.deltaTime; // 弧度每次加0.03
             float dy = Mathf.Cos(radian) * radius; // dy定义的是针对y轴的变量，也可以使用sin，找到一个适合的值就可以
             transform.position = oldPos + new Vector3(0, dy, 0);
-
+            
             //////////////////////////////////////////////////////////////////////////////////////////
 
             if (Input.GetAxis("Mouse ScrollWheel") != 0)
             {
-                start_speed = start_speed + Input.GetAxis("Mouse ScrollWheel");
-                if (start_speed < -3)
-                    start_speed = -3;
-                else if (start_speed > 3)
-                    start_speed = 3;
+                mouseWeelSpeed+= Input.GetAxis("Mouse ScrollWheel")*5;
+                start_speed = (start_speed* Time.deltaTime) + mouseWeelSpeed;
+
+                if (mouseWeelSpeed < -15)
+                    mouseWeelSpeed = -15;
+                else if (mouseWeelSpeed > 15)
+                    mouseWeelSpeed = 15;
             }
-            this.transform.Rotate(0, start_speed* plus_minus, 0);
+            this.transform.Rotate(0, start_speed* plus_minus , 0);
 
         }
         
@@ -96,7 +104,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
     public void gearFlyOut()
     {
         //GearFlyOut.instance.InitMove(this.transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z + 2));
-        is_out = isflyout = true;
+        is_out = isflyout = CanHandMove = true;
         
         gear_boom.transform.position = new Vector3(oldPos.x, oldPos.y+0.5f, oldPos.z);
         gear_boom.GetComponent<Rigidbody>().useGravity = true;
