@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Falling : MonoBehaviour
 {
-    public GameObject originalPoint;
-    public GameObject fallingPoint;
+    float originalPointY;
+    float fallingPointY;
 
     float posX,posY,posZ;
 
@@ -13,33 +13,36 @@ public class Falling : MonoBehaviour
 
     void Start()
     {
+        originalPointY=transform.position.y;
+        fallingPointY = transform.position.y-10;
         posX = this.gameObject.transform.position.x;
         posY = this.gameObject.transform.position.y;
         posZ = this.gameObject.transform.position.z;
     }
 
-    void OnMouseDown()
+    public void GoFalling()
     {
-        if (Input.GetMouseButtonDown(0)&&!isPulling)
+        if (!isPulling)
         {
-            Invoke("GearFalling", 0f);
-            Invoke("GearRecover", 5f);
+            StartCoroutine(GearFalling());
         }
     }
 
-    private void GearFalling()
-    {
-        posY = fallingPoint.transform.position.y;
-        StartCoroutine( DoTransform(2, transform.position, new Vector3(posX, posY, posZ)));
-    }
-    private void GearRecover()
-    {
-        posY = originalPoint.transform.position.y;
-        StartCoroutine(DoTransform(5, transform.position, new Vector3(posX, posY, posZ)));
-    }
-    IEnumerator DoTransform(float duration, Vector3 posStart, Vector3 posEnd)
+    IEnumerator GearFalling()
     {
         isPulling = true;
+        posY = fallingPointY;
+        StartCoroutine( DoTransform(2, transform.position, new Vector3(posX, posY, posZ)));
+
+        yield return new WaitForSeconds(5);
+
+        posY = originalPointY;
+        StartCoroutine(DoTransform(5, transform.position, new Vector3(posX, posY, posZ)));
+
+    }
+
+    IEnumerator DoTransform(float duration, Vector3 posStart, Vector3 posEnd)
+    {
         float timeStart = Time.time;
         float timeEnd = timeStart + duration;
 
@@ -52,12 +55,10 @@ public class Falling : MonoBehaviour
             yield return null;
         }
         this.transform.localPosition = posEnd;
-        if (Time.time >= timeEnd)
-        {
-            isPulling = false;
-            Debug.Log(isPulling);
-        }
+
+        isPulling = false;
     }
+
     float CubicEaseOut(float t)
     {
         return ((t = t - 1) * t * t + 1);

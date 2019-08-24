@@ -47,6 +47,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
         
     }
 
+    public GameObject fallingObj; 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.clickCount == 2)
@@ -60,7 +61,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             Debug.Log("Left");
-
+            fallingObj.GetComponent<Falling>().GoFalling();
         }
         else if (eventData.button == PointerEventData.InputButton.Middle)
         {
@@ -89,8 +90,9 @@ public class gear : MonoBehaviour, IPointerClickHandler
         is_out = isflyout = true;
 
         gear_boom.transform.position = new Vector3(oldPos.x, oldPos.y+0.5f, oldPos.z);
-        gear_boom.GetComponent<Rigidbody>().AddExplosionForce(6000f, oldPos, 20f);
         gear_boom.GetComponent<Rigidbody>().useGravity = true;
+        gear_boom.GetComponent<Rigidbody>().AddExplosionForce(6000f, oldPos, 20f);
+        
 
         //讓物件消失在範圍內
         transform.position = new Vector3(10000, 0, 0);
