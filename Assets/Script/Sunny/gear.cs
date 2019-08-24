@@ -11,13 +11,17 @@ public class gear : MonoBehaviour, IPointerClickHandler
 
     float radian = 0; // 弧度
     Vector3 oldPos; // 开始时候的坐标
-    public float perRadian = 0.03f; // 每次变化的弧度(變化速度)，最好小於0.7
-    public float radius = 0.2f; //高度變化，最好小於3
-
+    float perRadian = 0.03f; // 每次变化的弧度(變化速度)，最好小於0.07
+    float radius = 0.2f; //高度變化，最好小於0.3
+    int plus_minus = 1;
 
     void Start()
     {
+        radius = Random.Range(0.05f, 0.3f);
+        perRadian= Random.Range(0.03f, 0.07f);
         oldPos = transform.position; // 保存最初的位置
+        if (Random.Range(-5, 5) % 2 == 1)
+            plus_minus = -1;
     }
 
     private float dTime = 0;
@@ -41,7 +45,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
                 else if (start_speed > 3)
                     start_speed = 3;
             }
-            this.transform.Rotate(0, start_speed, 0);
+            this.transform.Rotate(0, start_speed* plus_minus, 0);
 
         }
         
