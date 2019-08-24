@@ -33,17 +33,19 @@ public class NewController : MonoBehaviour {
     {
         if (!canMove) return;
 		GetInput ();
-        Dash();
+
         Jump();
         Attack();
 
         if (Mathf.Abs(input.x) < 1 && Mathf.Abs(input.y) < 1 || !canMove) {
             return;
 		}
-		CalculateDirection();
+
+        CalculateDirection();
 		Rotate();
 		Move();
-	}
+        Dash();
+    }
 	void GetInput(){
 		input.x = Input.GetAxisRaw ("Horizontal");
 		input.y = Input.GetAxisRaw ("Vertical");
