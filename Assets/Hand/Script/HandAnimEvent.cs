@@ -13,6 +13,9 @@ public class HandAnimEvent : MonoBehaviour
     private bool IsFaceTO;
     public Vector3 HandMoveOffset;
     [Range(0.01f, 1f)] public float HandMoveSpeed;
+    public Vector3 dangerEffOffset;
+    public GameObject[] soundPrefab;
+    public GameObject[] particlePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -85,6 +88,20 @@ public class HandAnimEvent : MonoBehaviour
     public void SetFaceToFalse()
     {
         IsFaceTO = false;
+    }
+
+    public void DangerParticle()
+    {
+
+        CreateGo(soundPrefab[0], 3,Vector3.zero);
+        CreateGo(particlePrefab[0], 3, target.transform.position + dangerEffOffset);
+    }
+
+    public void CreateGo(GameObject go, float destroyTime, Vector3 spawnPos)
+    {
+        var so = Instantiate(go);
+        so.transform.position = spawnPos;
+        Destroy(so, destroyTime);
     }
 
 
