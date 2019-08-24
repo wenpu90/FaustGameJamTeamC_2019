@@ -11,19 +11,19 @@ public class Falling : MonoBehaviour
 
     bool isPulling = false;
 
-    void Start()
+    void Init()
     {
         originalPointY=transform.position.y;
         fallingPointY = transform.position.y-10;
-        posX = this.gameObject.transform.position.x;
-        posY = this.gameObject.transform.position.y;
-        posZ = this.gameObject.transform.position.z;
+        posX = gameObject.transform.position.x;
+        posZ = gameObject.transform.position.z;
     }
 
     public void GoFalling()
     {
         if (!isPulling)
         {
+            Init();
             StartCoroutine(GearFalling());
         }
     }
@@ -31,14 +31,13 @@ public class Falling : MonoBehaviour
     IEnumerator GearFalling()
     {
         isPulling = true;
-        posY = fallingPointY;
-        StartCoroutine( DoTransform(2, transform.position, new Vector3(posX, posY, posZ)));
+        StartCoroutine( DoTransform(2, transform.position, new Vector3(posX, fallingPointY, posZ)));
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2.5f);
 
-        posY = originalPointY;
-        StartCoroutine(DoTransform(5, transform.position, new Vector3(posX, posY, posZ)));
-
+        StartCoroutine(DoTransform(4, transform.position, new Vector3(posX, originalPointY, posZ)));
+        yield return new WaitForSeconds(4.5f);
+        transform.position = new Vector3(10000, 0, 0);
     }
 
     IEnumerator DoTransform(float duration, Vector3 posStart, Vector3 posEnd)

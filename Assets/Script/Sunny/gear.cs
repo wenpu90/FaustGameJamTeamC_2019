@@ -64,20 +64,22 @@ public class gear : MonoBehaviour, IPointerClickHandler
     {
         if (eventData.clickCount == 2 && !is_out)
         {
+            is_out = isflyout = CanHandMove = true;
             //Debug.Log("eventData.clickCount == 2");
             transform.position = new Vector3(10000, 0, 0);
             gearFlyOut();
 
-            Invoke("PutBackObject", 10);
+            Invoke("PutBackObject_2", 10);
         }
         if (eventData.button == PointerEventData.InputButton.Left && !is_out)
         {
+            is_out = isflyout = true;
             //Debug.Log("Left");
             fallingObj.transform.position = transform.position;
             transform.position = new Vector3(10000, 0, 0);
             fallingObj.GetComponent<Falling>().GoFalling();
 
-            Invoke("PutBackObject", 6);
+            Invoke("PutBackObject_L", 7);
         }
         else if (eventData.button == PointerEventData.InputButton.Middle)
         {
@@ -92,19 +94,23 @@ public class gear : MonoBehaviour, IPointerClickHandler
     }
 
 
-    public void PutBackObject()
+    public void PutBackObject_2()
     {
         transform.position = oldPos;
         is_out = isflyout = false;
         gear_boom.GetComponent<Rigidbody>().useGravity = false;
         gear_boom.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
+    public void PutBackObject_L()
+    {
+        transform.position = oldPos;
+        is_out = isflyout = false;
+    }
 
     public GameObject gear_boom;
     public void gearFlyOut()
     {
         //GearFlyOut.instance.InitMove(this.transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z + 2));
-        is_out = isflyout = CanHandMove = true;
         
         gear_boom.transform.position = new Vector3(oldPos.x, oldPos.y+0.5f, oldPos.z);
         gear_boom.GetComponent<Rigidbody>().useGravity = true;
