@@ -14,8 +14,8 @@ public class HandAnimEvent : MonoBehaviour
     public Vector3 HandMoveOffset;
     [Range(0.01f, 1f)] public float HandMoveSpeed;
     public Vector3 dangerEffOffset;
-    public GameObject[] soundPrefab;
-    public GameObject[] particlePrefab;
+    public List<GameObject> soundPrefab;
+    public List<GameObject> particlePrefab;
     public bool IsCanBeAttack;
     public Animator anim;
 
@@ -30,10 +30,12 @@ public class HandAnimEvent : MonoBehaviour
     {
         if (anim == null) anim = GetComponent<Animator>();
 
-        soundPrefab[0] = (GameObject)Resources.Load("Hand/DangerSFX");
-        particlePrefab[0] = (GameObject)Resources.Load("Hand/危!");
-        soundPrefab[1] = (GameObject)Resources.Load("Hand/DangerSFX");
-        particlePrefab[1] = (GameObject)Resources.Load("Hand/再來啊!");
+        if (soundPrefab == null) soundPrefab = new List<GameObject>();
+        if (particlePrefab == null) particlePrefab = new List<GameObject>();
+        soundPrefab.Add( (GameObject)Resources.Load("Hand/DangerSFX"));
+        soundPrefab.Add( (GameObject)Resources.Load("Hand/DangerSFX"));
+        particlePrefab.Add((GameObject)Resources.Load("Hand/危!"));
+        particlePrefab.Add((GameObject)Resources.Load("Hand/再來啊!"));
     }
 
     public void SetAttackingTrue()

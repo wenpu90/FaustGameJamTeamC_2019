@@ -238,6 +238,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &29404194
 GameObject:
@@ -364,6 +365,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &39456940
 GameObject:
@@ -490,6 +492,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &74490838
 GameObject:
@@ -616,6 +619,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &86711069
 GameObject:
@@ -854,6 +858,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &113933613
 GameObject:
@@ -980,6 +985,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &124912654
 GameObject:
@@ -1106,6 +1112,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &133454778
 GameObject:
@@ -1232,6 +1239,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &149238730
 GameObject:
@@ -1358,6 +1366,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &152595888
 GameObject:
@@ -1484,6 +1493,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &161189598
 GameObject:
@@ -1610,6 +1620,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &195438306
 GameObject:
@@ -1736,6 +1747,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &197225424
 GameObject:
@@ -1862,6 +1874,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &238253699
 GameObject:
@@ -1988,6 +2001,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1001 &256786303
 PrefabInstance:
@@ -2034,7 +2048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2179,6 +2193,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &293793330
 GameObject:
@@ -2271,7 +2286,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &293793335
 MonoBehaviour:
@@ -2289,6 +2304,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!54 &293793336
 Rigidbody:
@@ -2351,7 +2367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2500,6 +2516,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &415550835
 GameObject:
@@ -2626,6 +2643,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &438418109
 GameObject:
@@ -2752,6 +2770,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &451977761
 GameObject:
@@ -2878,6 +2897,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &474719106
 GameObject:
@@ -3004,6 +3024,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &537045164
 GameObject:
@@ -3095,7 +3116,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559762087
 GameObject:
@@ -3222,6 +3243,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &565878931
 GameObject:
@@ -3348,6 +3370,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &573070670
 GameObject:
@@ -3474,6 +3497,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &608867255
 GameObject:
@@ -3568,7 +3592,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &608867260
 MonoBehaviour:
@@ -3586,6 +3610,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 876455888}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &608867261
 MonoBehaviour:
@@ -3762,6 +3787,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &658338631
 GameObject:
@@ -3888,6 +3914,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &691783346
 GameObject:
@@ -4014,6 +4041,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &737730338
 GameObject:
@@ -4140,6 +4168,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &748822754
 GameObject:
@@ -4266,6 +4295,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &755465236
 GameObject:
@@ -4392,6 +4422,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &765154671
 GameObject:
@@ -4518,7 +4549,97 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
+--- !u!1001 &787859615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8224947856885934286, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_Name
+      value: AttackHand (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404269803408835343, guid: aa2dcd928c87f4644846c13fafc73dac,
+        type: 3}
+      propertyPath: animEvent
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa2dcd928c87f4644846c13fafc73dac, type: 3}
 --- !u!1 &819494852
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,6 +4765,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &842101953
 GameObject:
@@ -4770,6 +4892,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &845423082
 GameObject:
@@ -4896,6 +5019,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &856704239
 GameObject:
@@ -5022,7 +5146,112 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
+--- !u!1 &862104141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 862104146}
+  - component: {fileID: 862104145}
+  - component: {fileID: 862104144}
+  - component: {fileID: 862104143}
+  - component: {fileID: 862104142}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &862104142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862104141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a5fe8ce36ac7349a27d1fe71c4819e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &862104143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862104141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &862104144
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862104141}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &862104145
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862104141}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &862104146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862104141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.39698, y: 2.98, z: -2.299148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &872125369
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,7 +5377,14 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
+--- !u!1 &876455888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8224947856885934286, guid: aa2dcd928c87f4644846c13fafc73dac,
+    type: 3}
+  m_PrefabInstance: {fileID: 787859615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &924390588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5274,6 +5510,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &936490344
 GameObject:
@@ -5400,6 +5637,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &949968806
 GameObject:
@@ -5526,6 +5764,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &953142975
 GameObject:
@@ -5652,6 +5891,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &970726496
 GameObject:
@@ -5778,6 +6018,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &971519544
 GameObject:
@@ -5904,6 +6145,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &973957373
 GameObject:
@@ -6030,6 +6272,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &997853640
 GameObject:
@@ -6156,6 +6399,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1016315106
 GameObject:
@@ -6282,6 +6526,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1019637769
 GameObject:
@@ -6408,6 +6653,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1028735078
 GameObject:
@@ -6534,6 +6780,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1045442913
 GameObject:
@@ -6660,6 +6907,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1047478544
 GameObject:
@@ -6786,6 +7034,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1126192080
 GameObject:
@@ -6875,7 +7124,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1128619121
 GameObject:
@@ -7002,6 +7251,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1135347335
 GameObject:
@@ -7128,6 +7378,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1135862350
 GameObject:
@@ -7254,6 +7505,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1139716600
 GameObject:
@@ -7380,6 +7632,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1181702744
 GameObject:
@@ -7487,7 +7740,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1235601670
 GameObject:
@@ -7614,6 +7867,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1276537341
 GameObject:
@@ -7740,6 +7994,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1286775990
 GameObject:
@@ -7866,6 +8121,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1290413218
 GameObject:
@@ -7992,6 +8248,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1302163822
 GameObject:
@@ -8118,6 +8375,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1318509937
 GameObject:
@@ -8244,6 +8502,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1321557920
 GameObject:
@@ -8370,6 +8629,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1325946132
 GameObject:
@@ -8438,7 +8698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1349334823
 GameObject:
@@ -8565,6 +8825,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1352444164
 GameObject:
@@ -8691,6 +8952,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1374424302
 GameObject:
@@ -8817,6 +9079,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1382239834
 GameObject:
@@ -8925,7 +9188,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1382239840
 MonoBehaviour:
@@ -9064,6 +9327,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1394124125
 GameObject:
@@ -9190,6 +9454,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1409185081
 GameObject:
@@ -9316,6 +9581,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1425183552
 GameObject:
@@ -9442,6 +9708,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1462641289
 GameObject:
@@ -9568,6 +9835,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1489863419
 GameObject:
@@ -9694,6 +9962,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1513933750
 GameObject:
@@ -9820,6 +10089,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1557084334
 GameObject:
@@ -9910,7 +10180,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1557852635
 GameObject:
@@ -10037,6 +10307,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1558175702
 GameObject:
@@ -10129,7 +10400,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1558175707
 MonoBehaviour:
@@ -10147,6 +10418,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!54 &1558175708
 Rigidbody:
@@ -10289,6 +10561,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1598858181
 GameObject:
@@ -10415,6 +10688,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1601010798
 GameObject:
@@ -10541,6 +10815,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1001 &1611491967
 PrefabInstance:
@@ -10595,7 +10870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10752,6 +11027,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1646587187
 GameObject:
@@ -10878,6 +11154,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1647527358
 GameObject:
@@ -11004,6 +11281,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1693710963
 GameObject:
@@ -11130,6 +11408,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1727347991
 GameObject:
@@ -11256,6 +11535,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1767627227
 GameObject:
@@ -11382,6 +11662,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1784741363
 GameObject:
@@ -11508,6 +11789,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1790025225
 GameObject:
@@ -11635,7 +11917,7 @@ Transform:
   - {fileID: 1598858182}
   - {fileID: 124912655}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804594706
 GameObject:
@@ -11728,7 +12010,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1804594711
 MonoBehaviour:
@@ -11746,6 +12028,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!54 &1804594712
 Rigidbody:
@@ -11852,7 +12135,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849714479
 GameObject:
@@ -11979,6 +12262,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1857711272
 GameObject:
@@ -12105,6 +12389,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1879071509
 GameObject:
@@ -12231,6 +12516,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1892642241
 GameObject:
@@ -12357,6 +12643,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1001 &1912374933
 PrefabInstance:
@@ -12403,7 +12690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12548,6 +12835,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1930607046
 GameObject:
@@ -12674,6 +12962,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1936691671
 GameObject:
@@ -12800,6 +13089,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1938227326
 GameObject:
@@ -12926,6 +13216,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1950556344
 GameObject:
@@ -13052,6 +13343,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &1985644786
 GameObject:
@@ -13142,7 +13434,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1989198508
 GameObject:
@@ -13269,6 +13561,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2009249525
 GameObject:
@@ -13395,6 +13688,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2011101654
 GameObject:
@@ -13521,6 +13815,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2021943741
 GameObject:
@@ -13611,7 +13906,7 @@ Transform:
   m_LocalScale: {x: 10, y: 0.5, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030224762
 GameObject:
@@ -13738,6 +14033,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2061872648
 GameObject:
@@ -13864,6 +14160,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2067077893
 GameObject:
@@ -13990,6 +14287,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2103418899
 GameObject:
@@ -14116,6 +14414,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2103909682
 GameObject:
@@ -14242,6 +14541,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2106077108
 GameObject:
@@ -14368,6 +14668,7 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
+  handObj: {fileID: 0}
   gear_boom: {fileID: 0}
 --- !u!1 &2134600511
 GameObject:
@@ -19248,6 +19549,8 @@ MonoBehaviour:
   dangerEffOffset: {x: 0, y: 0, z: 0}
   soundPrefab: []
   particlePrefab: []
+  IsCanBeAttack: 0
+  anim: {fileID: 0}
 --- !u!4 &619818247294068388
 Transform:
   m_ObjectHideFlags: 0
@@ -19474,6 +19777,10 @@ MonoBehaviour:
   IsUp: 0
   originalPos: {x: 0, y: 0, z: 0}
   _targetPosition: {x: 0, y: 0, z: 0}
+  CanBeAttackTime: 0
+  IsCanBeAttack: 0
+  IsPlayerAttack: 0
+  IsDebugMode: 0
   HandMoveSpeed: 0.11
 --- !u!4 &4423613845516185200
 Transform:
@@ -19489,7 +19796,7 @@ Transform:
   - {fileID: 6542546660295276361}
   - {fileID: 619818246779687453}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5617084247230638225
 GameObject:
@@ -21709,7 +22016,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4423613845516185200}
-  - component: {fileID: 8224947858153637966}
   - component: {fileID: 4404269804827550605}
   m_Layer: 0
   m_Name: AttackHand
@@ -21717,19 +22023,4 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &8224947858153637966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8224947858153637964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa091f2ce7c9a0a49a2d0986c82ebea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 2134600516}
-  IsLerp: 1
-  LerpAmount: 1.58
+  m_IsActive: 0

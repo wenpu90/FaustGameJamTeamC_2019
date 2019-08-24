@@ -60,17 +60,10 @@ public class gear : MonoBehaviour, IPointerClickHandler
     }
 
     public GameObject fallingObj; 
+    public GameObject handObj; 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.clickCount == 2 && !is_out)
-        {
-            is_out = isflyout = CanHandMove = true;
-            //Debug.Log("eventData.clickCount == 2");
-            transform.position = new Vector3(10000, 0, 0);
-            gearFlyOut();
-
-            Invoke("PutBackObject_2", 10);
-        }
+        /*if (eventData.clickCount == 2 && !is_out){ Debug.Log("eventData.clickCount == 2"); }*/
         if (eventData.button == PointerEventData.InputButton.Left && !is_out)
         {
             is_out = isflyout = true;
@@ -79,7 +72,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
             transform.position = new Vector3(10000, 0, 0);
             fallingObj.GetComponent<Falling>().GoFalling();
 
-            Invoke("PutBackObject_L", 7);
+            Invoke("PutBackObject_L", 6.8f);
         }
         else if (eventData.button == PointerEventData.InputButton.Middle)
         {
@@ -88,8 +81,13 @@ public class gear : MonoBehaviour, IPointerClickHandler
         }
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
-            Debug.Log("Right");
+            //Debug.Log("Right");
+            is_out = isflyout = CanHandMove = true;
+            handObj.transform.position = new Vector3(transform.position.x, transform.position.y-3, transform.position.z);
+            transform.position = new Vector3(10000, 0, 0);
+            gearFlyOut();
 
+            Invoke("PutBackObject_2", 10);
         }
     }
 
@@ -100,6 +98,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
         is_out = isflyout = false;
         gear_boom.GetComponent<Rigidbody>().useGravity = false;
         gear_boom.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        gear_boom.transform.position = new Vector3(10000, 0, 0);
     }
     public void PutBackObject_L()
     {
