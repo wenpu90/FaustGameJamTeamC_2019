@@ -22,6 +22,8 @@ public class ThisIsHand : MonoBehaviour
     public bool IsCanBeAttack;
     public bool IsPlayerAttack;
     public bool IsDebugMode;
+    public int BeAttackCount;
+    
 
     private static ThisIsHand _instance;
     public static ThisIsHand Instance
@@ -49,6 +51,7 @@ public class ThisIsHand : MonoBehaviour
 
     private void OnEnable()
     {
+        BeAttackCount = 0;
         if (animEvent == null) animEvent = transform.GetChild(0).GetComponent<HandAnimEvent>();
         if (target == null) target = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -88,10 +91,32 @@ public class ThisIsHand : MonoBehaviour
             OnPlayerAttack();
 
         }
+        UpdateBlood(BeAttackCount);
 
         IsPlayerAttack = false;
 
+        
 
+    }
+
+    private void UpdateBlood(int BeAttackCount)
+    {
+        if(BeAttackCount == 1)
+        {
+            animEvent.BloodParticle[0].SetActive(true);
+        }
+        if (BeAttackCount == 5)
+        {
+            animEvent.BloodParticle[1].SetActive(true);
+        }
+        if (BeAttackCount == 10)
+        {
+            animEvent.BloodParticle[2].SetActive(true);
+        }
+        if (BeAttackCount == 15)
+        {
+            animEvent.BloodParticle[3].SetActive(true);
+        }
     }
 
     private void DebugFakeMiddleAttack()
@@ -106,7 +131,7 @@ public class ThisIsHand : MonoBehaviour
     {
         Debug.LogError("HandToDo:被玩家攻擊");
         anim.SetBool("OnAttack", true);
-
+        BeAttackCount++;
         animEvent.CreateGo(animEvent.particlePrefab[1], 3, this.transform.position);
         animEvent.CreateGo(animEvent.soundPrefab[1], 3, this.transform.position);
     }

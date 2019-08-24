@@ -18,6 +18,10 @@ public class HandAnimEvent : MonoBehaviour
     public List<GameObject> particlePrefab;
     public bool IsCanBeAttack;
     public Animator anim;
+    public List<GameObject> BloodParticle;
+
+    public GameObject AttackPlayerCollider, BeAttackByPlayerCollider;
+
 
 
     // Start is called before the first frame update
@@ -39,6 +43,9 @@ public class HandAnimEvent : MonoBehaviour
         soundPrefab.Add((GameObject)Resources.Load("Hand/JohnCenaSFX"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/危!"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/再來啊!"));
+        SetAttackColliderFalse();
+        SetBeAttackColliderFalse();
+        _SetBloodParticleFalse();
     }
 
     public void SetAttackingTrue()
@@ -60,6 +67,36 @@ public class HandAnimEvent : MonoBehaviour
         }
 
     }
+
+    private void _SetBloodParticleFalse()
+    {
+        foreach(var p in BloodParticle)
+        {
+            p.SetActive(false);
+        }
+    }
+
+    public void SetAttackColliderTrue()
+    {
+        BeAttackByPlayerCollider.SetActive(false);
+        AttackPlayerCollider.SetActive(true);
+    }
+    public void SetAttackColliderFalse()
+    {
+        BeAttackByPlayerCollider.SetActive(true);
+        AttackPlayerCollider.SetActive(false);
+    }
+
+    public void SetBeAttackColliderTrue()
+    {
+        BeAttackByPlayerCollider.SetActive(true);
+    }
+    public void SetBeAttackColliderFalse()
+    {
+        BeAttackByPlayerCollider.SetActive(false);
+    }
+
+
 
     public void IsCanBeAttackTrue()
     {
