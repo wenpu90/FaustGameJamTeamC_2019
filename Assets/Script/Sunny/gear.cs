@@ -50,18 +50,22 @@ public class gear : MonoBehaviour, IPointerClickHandler
     public GameObject fallingObj; 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.clickCount == 2)
+        if (eventData.clickCount == 2 && !is_out)
         {
-            Debug.Log("eventData.clickCount == 2");
+            //Debug.Log("eventData.clickCount == 2");
+            transform.position = new Vector3(10000, 0, 0);
             gearFlyOut();
 
-            //10秒之後，蓋子自動歸位
             Invoke("PutBackObject", 10);
         }
-        if (eventData.button == PointerEventData.InputButton.Left)
+        if (eventData.button == PointerEventData.InputButton.Left && !is_out)
         {
-            Debug.Log("Left");
+            //Debug.Log("Left");
+            fallingObj.transform.position = transform.position;
+            transform.position = new Vector3(10000, 0, 0);
             fallingObj.GetComponent<Falling>().GoFalling();
+
+            Invoke("PutBackObject", 6);
         }
         else if (eventData.button == PointerEventData.InputButton.Middle)
         {
@@ -78,25 +82,23 @@ public class gear : MonoBehaviour, IPointerClickHandler
 
     public void PutBackObject()
     {
-        transform.position= oldPos;
+        transform.position = oldPos;
         is_out = isflyout = false;
+        gear_boom.GetComponent<Rigidbody>().useGravity = false;
+        gear_boom.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 
     public GameObject gear_boom;
     public void gearFlyOut()
     {
-        
         //GearFlyOut.instance.InitMove(this.transform.position, new Vector3(transform.position.x + 2, transform.position.y, transform.position.z + 2));
         is_out = isflyout = true;
-
+        
         gear_boom.transform.position = new Vector3(oldPos.x, oldPos.y+0.5f, oldPos.z);
         gear_boom.GetComponent<Rigidbody>().useGravity = true;
-        gear_boom.GetComponent<Rigidbody>().AddExplosionForce(6000f, oldPos, 20f);
-        
 
-        //讓物件消失在範圍內
-        transform.position = new Vector3(10000, 0, 0);
-
+        Debug.Log(gear_boom.transform.up * 2);
+        gear_boom.GetComponent<Rigidbody>().AddForce(new Vector3(1,2,1));
         
     }
 
