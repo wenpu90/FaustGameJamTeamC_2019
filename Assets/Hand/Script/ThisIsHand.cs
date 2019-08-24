@@ -23,6 +23,13 @@ public class ThisIsHand : MonoBehaviour
     public bool IsPlayerAttack;
     public bool IsDebugMode;
     public int BeAttackCount;
+    public bool IsAutoAttack;
+    public AutoAttack AutoAttackType;
+    public enum AutoAttack
+    {
+        Slam,
+        Middle
+    }
     
 
     private static ThisIsHand _instance;
@@ -94,12 +101,23 @@ public class ThisIsHand : MonoBehaviour
 
         }
         IsPlayerAttack = false;
+
+        if(IsAutoAttack)
+        {
+            OnAutoStartAttack(AutoAttackType);
+        }
     }
 
     private void OnStartAttack()
     {
         if (BeAttackCount <= 10) StartCoroutine(MoveUp(() => SlamAttack()));
         if (BeAttackCount > 10) StartCoroutine(MoveUp(() => MiddleFingerAttack()));
+    }
+
+    private void OnAutoStartAttack(AutoAttack type)
+    {
+        if (type== AutoAttack.Slam) StartCoroutine(MoveUp(() => SlamAttack()));
+        if (type == AutoAttack.Middle) StartCoroutine(MoveUp(() => MiddleFingerAttack()));
     }
 
     private void UpdateBlood(int BeAttackCount)

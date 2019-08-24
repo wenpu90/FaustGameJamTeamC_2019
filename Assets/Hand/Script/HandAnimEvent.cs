@@ -197,7 +197,7 @@ public class HandAnimEvent : MonoBehaviour
 
     public void DangerParticle()
     {
-
+        if (GameObject.FindGameObjectsWithTag("DDDDanger").Length > 1) return;
         CreateGo(soundPrefab[0], 3,Vector3.zero);
         CreateGo(particlePrefab[0], 3, target.transform.position + dangerEffOffset);
     }
@@ -211,6 +211,7 @@ public class HandAnimEvent : MonoBehaviour
 
     public void JohnCenaSFX()
     {
+        if (GameObject.FindGameObjectsWithTag("AnnoyJohnCena").Length > 1) return;
         CreateGo(soundPrefab[2], 10, Vector3.zero);
     }
 
