@@ -56,27 +56,24 @@ public class ThisIsHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(IsTestAnim)
+        if (IsTestAnim)
         {
             SlamAttack();
         }
         //if(Input.GetMouseButtonDown(0) && IsUp==false)
-        if(gear.CanHandMove && IsUp==false)
+        if (gear.CanHandMove && IsUp == false)
         {
             gear.CanHandMove = false;
-            StartCoroutine(MoveUp(()=>SlamAttack()));
+            StartCoroutine(MoveUp(() => SlamAttack()));
         }
-        if(Input.GetMouseButtonDown(1))
-        {
-            StartCoroutine(MoveUp(() => MiddleFingerAttack()));
-        }
+        
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Default"))
         {
-            if(IsUp && !animEvent.IsAttacking)
+            if (IsUp && !animEvent.IsAttacking)
             {
                 Debug.Log("DownAnim");
-                
+
                 StartCoroutine(MoveDown());
             }
         }
@@ -84,6 +81,7 @@ public class ThisIsHand : MonoBehaviour
         {
             DebugFakeAttack();
             DebugFakeClick();
+            DebugFakeMiddleAttack();
         }
         if (animEvent.IsCanBeAttack && IsPlayerAttack)
         {
@@ -93,7 +91,15 @@ public class ThisIsHand : MonoBehaviour
 
         IsPlayerAttack = false;
 
- 
+
+    }
+
+    private void DebugFakeMiddleAttack()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            StartCoroutine(MoveUp(() => MiddleFingerAttack()));
+        }
     }
 
     private void OnPlayerAttack()
