@@ -55,42 +55,42 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.73333335
-        value: {x: -0.70206404, y: -45.195362, z: 1.8410441}
-        inSlope: {x: -1.04328, y: -997.9958, z: -1.9658698}
-        outSlope: {x: -1.04328, y: -997.9958, z: -1.9658698}
+        value: {x: -0.66779965, y: -45.195362, z: 1.9056091}
+        inSlope: {x: -0.053591684, y: -997.9958, z: -0.10098372}
+        outSlope: {x: -0.053591684, y: -997.9958, z: -0.10098372}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.76666665
-        value: {x: -0.744246, y: -88.085335, z: 1.7615598}
-        inSlope: {x: -1.4779797, y: -60.094017, z: -2.7849817}
-        outSlope: {x: -1.4779797, y: -60.094017, z: -2.7849817}
+        value: {x: -0.6700194, y: -88.085335, z: 1.9014264}
+        inSlope: {x: -0.079494305, y: -60.094017, z: -0.14979248}
+        outSlope: {x: -0.079494305, y: -60.094017, z: -0.14979248}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.93333334
-        value: {x: -1.119376, y: -91.090034, z: 1.0546961}
-        inSlope: {x: -2.78208, y: 2.407712, z: -5.24232}
-        outSlope: {x: -2.78208, y: 2.407712, z: -5.24232}
+        value: {x: -0.6935236, y: -91.090034, z: 1.8571368}
+        inSlope: {x: -0.20007563, y: 2.407712, z: -0.37700588}
+        outSlope: {x: -0.20007563, y: 2.407712, z: -0.37700588}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.1333333
-        value: {x: -1.675792, y: -87.57264, z: 0.006232202}
-        inSlope: {x: -2.4343202, y: 44.266922, z: -4.5870295}
-        outSlope: {x: -2.4343202, y: 44.266922, z: -4.5870295}
+        time: 3.5333333
+        value: {x: -1.9382799, y: -87.57264, z: -0.4883781}
+        inSlope: {x: -0.15362953, y: 44.266922, z: -0.28948665}
+        outSlope: {x: -0.15362953, y: 44.266922, z: -0.28948665}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 1, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.3333334
+        time: 3.7333333
         value: {x: -1.9540001, y: -2.8230002, z: -0.518}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -126,7 +126,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.3333334
+    m_StopTime: 3.7333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -164,7 +164,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3333334
+        time: 3.7333333
         value: -1.9540001
         inSlope: 0
         outSlope: 0
@@ -237,7 +237,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1333333
+        time: 3.5333333
         value: -87.57264
         inSlope: 44.266922
         outSlope: 44.266922
@@ -246,7 +246,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 1
       - serializedVersion: 3
-        time: 1.3333334
+        time: 3.7333333
         value: -2.8230002
         inSlope: 0
         outSlope: 0
@@ -283,7 +283,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.3333334
+        time: 3.7333333
         value: -0.518
         inSlope: 0
         outSlope: 0
@@ -353,7 +353,21 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.3333334
+  - time: 0.8333333
+    functionName: IsCanBeAttackTrue
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.1
+    functionName: IsCanBeAttackFalse
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.7333333
     functionName: SetAttackingFalse
     data: 
     objectReferenceParameter: {fileID: 0}
