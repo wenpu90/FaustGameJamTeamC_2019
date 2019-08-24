@@ -6,9 +6,10 @@ public class DamageDealing : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("PlayDamageCollision");
         if (collision.transform.CompareTag("Enemy"))
         {
-            //getDamage
+            ThisIsHand.Instance.IsPlayerAttack = true;
         }
     }
 }

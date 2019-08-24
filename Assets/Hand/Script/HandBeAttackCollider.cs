@@ -18,7 +18,12 @@ public class HandBeAttackCollider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-            ThisIsHand.Instance.IsPlayerAttack = true;
+        //這段在DamageDealing做(Player控制手的開關 IsPlayerAttack=true)
+
+
+        //if (collision.gameObject.CompareTag("Player"))
+        //    ThisIsHand.Instance.IsPlayerAttack = true;
+
+
     }
 }

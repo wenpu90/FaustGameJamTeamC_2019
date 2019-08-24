@@ -98,7 +98,6 @@ public class ThisIsHand : MonoBehaviour
 
     private void OnStartAttack()
     {
-        Debug.LogError(BeAttackCount);
         if (BeAttackCount <= 10) StartCoroutine(MoveUp(() => SlamAttack()));
         if (BeAttackCount > 10) StartCoroutine(MoveUp(() => MiddleFingerAttack()));
     }
@@ -147,11 +146,11 @@ public class ThisIsHand : MonoBehaviour
             OnStartAttack();
     }
 
-    public void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("Player"))
-            IsPlayerAttack = true;
-    }
+    //public void OnCollisionEnter(Collision collision)
+    //{
+    //    if(collision.gameObject.CompareTag("Player"))
+    //        IsPlayerAttack = true;
+    //}
 
     public void DebugFakeAttack()
     {
@@ -166,6 +165,7 @@ public class ThisIsHand : MonoBehaviour
 
     public void StartMoveDown()
     {
+        Debug.Log("StartMoveDown");
         StartCoroutine(MoveDown());
     }
 
