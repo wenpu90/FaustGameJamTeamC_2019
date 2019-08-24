@@ -52,6 +52,10 @@ public class ThisIsHand : MonoBehaviour
             StartCoroutine(MoveUp(()=>SlamAttack()));
             
         }
+        if(Input.GetMouseButtonDown(1))
+        {
+            StartCoroutine(MoveUp(() => MiddleFingerAttack()));
+        }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Default"))
         {
@@ -119,6 +123,11 @@ public class ThisIsHand : MonoBehaviour
         
         anim.SetTrigger("Slam");
         
+    }
+
+    public void MiddleFingerAttack()
+    {
+        anim.SetTrigger("MiddleFinger");
     }
 
     public void FaceTo()

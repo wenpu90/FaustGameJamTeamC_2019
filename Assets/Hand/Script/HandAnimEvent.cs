@@ -87,5 +87,10 @@ public class HandAnimEvent : MonoBehaviour
         IsFaceTO = false;
     }
 
+    public void DangerEff()
+    {
+
+    }
+
 
 }
