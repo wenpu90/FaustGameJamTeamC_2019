@@ -46,6 +46,7 @@ public class ThisIsHand : MonoBehaviour
         {
             SlamAttack();
         }
+        //if(Input.GetMouseButtonDown(0) && IsUp==false)
         if(Input.GetMouseButtonDown(0) && IsUp==false)
         {
             StartCoroutine(MoveUp(()=>SlamAttack()));
