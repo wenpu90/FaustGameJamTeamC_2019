@@ -168,7 +168,7 @@ public class HandAnimEvent : MonoBehaviour
 
                 time -= Time.deltaTime;
                 
-                cam.transform.localPosition = oPos + Random.insideUnitSphere * shakeAmount;
+                cam.transform.localPosition = cam.transform.localPosition + Random.insideUnitSphere * shakeAmount;
                 yield return null;
             }
             cam.transform.localPosition = oPos;
