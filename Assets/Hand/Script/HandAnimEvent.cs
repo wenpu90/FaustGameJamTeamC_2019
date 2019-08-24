@@ -31,9 +31,12 @@ public class HandAnimEvent : MonoBehaviour
         if (anim == null) anim = GetComponent<Animator>();
 
         if (soundPrefab == null) soundPrefab = new List<GameObject>();
+        soundPrefab.Clear();
         if (particlePrefab == null) particlePrefab = new List<GameObject>();
+        particlePrefab.Clear();
         soundPrefab.Add( (GameObject)Resources.Load("Hand/DangerSFX"));
-        soundPrefab.Add( (GameObject)Resources.Load("Hand/DangerSFX"));
+        soundPrefab.Add( (GameObject)Resources.Load("Hand/OnAttackSFX"));
+        soundPrefab.Add((GameObject)Resources.Load("Hand/JohnCenaSFX"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/危!"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/再來啊!"));
     }
@@ -135,6 +138,11 @@ public class HandAnimEvent : MonoBehaviour
         var so = Instantiate(go);
         so.transform.position = spawnPos;
         Destroy(so, destroyTime);
+    }
+
+    public void JohnCenaSFX()
+    {
+        CreateGo(soundPrefab[2], 10, Vector3.zero);
     }
 
 

@@ -158,6 +158,7 @@ public class ThisIsHand : MonoBehaviour
     public IEnumerator MoveUp(Action attack)
     {
         Debug.Log("HandMoveUp");
+        animEvent.JohnCenaSFX();
         originalPos = transform.position;
         _targetPosition = target.position;
         var pos = HandMoveOffset + target.position;
