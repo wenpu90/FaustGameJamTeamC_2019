@@ -81,6 +81,7 @@ public class HandAnimEvent : MonoBehaviour
 
     public void HandMoveDown()
     {
+        Debug.Log("手往下");
         ThisIsHand.Instance.StartMoveDown();
     }
     private IEnumerator CameraShake()
