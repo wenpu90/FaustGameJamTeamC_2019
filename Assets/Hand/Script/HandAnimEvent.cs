@@ -29,6 +29,11 @@ public class HandAnimEvent : MonoBehaviour
     private void OnEnable()
     {
         if (anim == null) anim = GetComponent<Animator>();
+
+        soundPrefab[0] = (GameObject)Resources.Load("Hand/DangerSFX");
+        particlePrefab[0] = (GameObject)Resources.Load("Hand/危!");
+        soundPrefab[1] = (GameObject)Resources.Load("Hand/DangerSFX");
+        particlePrefab[1] = (GameObject)Resources.Load("Hand/再來啊!");
     }
 
     public void SetAttackingTrue()
@@ -54,13 +59,14 @@ public class HandAnimEvent : MonoBehaviour
     public void IsCanBeAttackTrue()
     {
         IsCanBeAttack = true;
+        Debug.Log("手可以被攻擊");
 
     }
     public void IsCanBeAttackFalse()
     {
         IsCanBeAttack = false;
         anim.SetBool("OnAttack",false);
-        Debug.LogError("fff");
+        Debug.Log("手不能被攻擊");
 
     }
 

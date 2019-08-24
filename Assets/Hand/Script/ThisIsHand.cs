@@ -21,6 +21,7 @@ public class ThisIsHand : MonoBehaviour
     [Range(0.5f, 10f)]public float CanBeAttackTime;
     public bool IsCanBeAttack;
     public bool IsPlayerAttack;
+    public bool IsDebugMode;
 
     private static ThisIsHand _instance;
     public static ThisIsHand Instance
@@ -79,16 +80,35 @@ public class ThisIsHand : MonoBehaviour
                 StartCoroutine(MoveDown());
             }
         }
-        DebugFakeAttack();
+        if (IsDebugMode)
+        {
+            DebugFakeAttack();
+            DebugFakeClick();
+        }
         if (animEvent.IsCanBeAttack && IsPlayerAttack)
         {
-      
-            
-            Debug.LogError("HandToDo:被玩家攻擊");
-            anim.SetBool("OnAttack", true);
+            OnPlayerAttack();
+
         }
 
         IsPlayerAttack = false;
+
+ 
+    }
+
+    private void OnPlayerAttack()
+    {
+        Debug.LogError("HandToDo:被玩家攻擊");
+        anim.SetBool("OnAttack", true);
+
+        animEvent.CreateGo(animEvent.particlePrefab[1], 3, this.transform.position);
+        animEvent.CreateGo(animEvent.soundPrefab[1], 3, this.transform.position);
+    }
+
+    private void DebugFakeClick()
+    {
+        if(Input.GetMouseButtonDown(0))
+        StartCoroutine(MoveUp(() => SlamAttack()));
     }
 
     public void OnCollisionEnter(Collision collision)
