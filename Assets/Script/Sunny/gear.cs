@@ -63,6 +63,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
     public GameObject handObj; 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (!canControl) return;
         /*if (eventData.clickCount == 2 && !is_out){ Debug.Log("eventData.clickCount == 2"); }*/
         if (eventData.button == PointerEventData.InputButton.Left && !is_out)
         {

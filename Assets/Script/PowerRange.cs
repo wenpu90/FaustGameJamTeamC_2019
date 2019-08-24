@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PowerRange : MonoBehaviour
 {
-    public GameObject giantHand;
     public float powerRadius;   //可使用半徑
     static Collider[] perviousCols;
 
@@ -27,7 +26,7 @@ public class PowerRange : MonoBehaviour
     public void OnGetGear()
     {
         //球形射線檢測,得到powerRadius範圍內所有的物件
-        Collider[] cols = Physics.OverlapSphere(giantHand.transform.position, powerRadius);
+        Collider[] cols = Physics.OverlapSphere(transform.position, powerRadius);
 
         if (cols.Length > 0)
         {
