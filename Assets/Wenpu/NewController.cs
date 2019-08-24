@@ -5,18 +5,21 @@ using DG.Tweening;
 
 public class NewController : MonoBehaviour {
 
-	public float velocity = 5;
+	public float velocity = 7;
 	public float turnSpeed = 10;
     public Rigidbody rb;
-    public float dashForce;
-    public float jumpForce;
+    public float dashForce = 15;
+    public float jumpForce = 5;
 	Vector2 input;
 	float angle;
 
+    public float dashTimer = 0;
     public bool isGrouned = false;
 	Quaternion targetRotation;
 	Transform cam;
-//	public Animator anim;
+	public Animator anim;
+
+    public bool canMove = true;
 	void Start () {
 		cam = Camera.main.transform;
         rb = GetComponent<Rigidbody>();
@@ -25,13 +28,16 @@ public class NewController : MonoBehaviour {
     }
 	
 
-	void Update () {
+	void Update ()
+    {
+        if (!canMove) return;
 		GetInput ();
         Dash();
         Jump();
+        Attack();
 
-        if (Mathf.Abs(input.x) < 1 && Mathf.Abs(input.y) < 1) {
-			return;
+        if (Mathf.Abs(input.x) < 1 && Mathf.Abs(input.y) < 1 || !canMove) {
+            return;
 		}
 		CalculateDirection();
 		Rotate();
@@ -40,9 +46,9 @@ public class NewController : MonoBehaviour {
 	void GetInput(){
 		input.x = Input.GetAxisRaw ("Horizontal");
 		input.y = Input.GetAxisRaw ("Vertical");
-//		anim.SetFloat ("Horizontal", input.x);
-//		anim.SetFloat ("Vertical", input.y);
-	}
+        anim.SetFloat("Horizontal", input.x);
+        anim.SetFloat("Vertical", input.y);
+    }
 	void CalculateDirection(){
 		angle = Mathf.Atan2 (input.x, input.y);
 		angle = Mathf.Rad2Deg * angle;
@@ -58,19 +64,45 @@ public class NewController : MonoBehaviour {
 	}
     void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.U))
+        if(dashTimer >= 0)
         {
-            transform.DOMove(transform.forward * dashForce, 0.3f);
-            //rb.AddForce(transform.forward * dashForce, ForceMode.);
-            //rb.velocity = transform.forward * dashForce;
+            dashTimer -= Time.deltaTime;
         }
+        if (Input.GetKeyDown(KeyCode.U) )
+        {
+            dashTimer = 1f;
+            Invoke("VectorZero", 0.3f);
+           //transform.DOMove(new Vector3(0,0,transform.position.z * dashForce), 0.3f);
+            //rb.AddForce(transform.forward * dashForce, ForceMode.);
+            rb.velocity = transform.forward * dashForce;
+        }
+    }
+    void VectorZero()
+    {
+        rb.velocity = Vector3.zero;
     }
     void Jump()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            rb.AddForce(transform.up * jumpForce);
+            rb.velocity = transform.up * jumpForce;
+            anim.SetTrigger("jump");
         }
+    }
+    void Attack()
+    {
+        if (Input.GetKeyDown(KeyCode.O) )
+        {
+            anim.SetTrigger("attack");
+            canMove = false;
+            Invoke("UnLockMovement", 0.7f);
+
+        }
+    }
+    void UnLockMovement()
+    {
+        canMove = true;
+        CancelInvoke("UnLockMovement");
     }
     void RigidBodyInitialize()
     {
