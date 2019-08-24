@@ -20,7 +20,7 @@ public class HandAnimEvent : MonoBehaviour
     public Animator anim;
     public List<GameObject> BloodParticle;
 
-    public GameObject AttackPlayerCollider, BeAttackByPlayerCollider;
+    public GameObject AttackPlayerCollider, BeAttackByPlayerCollider, MiddleAttackCollider;
 
 
 
@@ -43,8 +43,9 @@ public class HandAnimEvent : MonoBehaviour
         soundPrefab.Add((GameObject)Resources.Load("Hand/JohnCenaSFX"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/危!"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/再來啊!"));
-        SetAttackColliderFalse();
-        SetBeAttackColliderFalse();
+        //SetAttackColliderFalse();
+        //SetBeAttackColliderFalse();
+        SetAllColliderFalse();
         _SetBloodParticleFalse();
     }
 
@@ -76,15 +77,24 @@ public class HandAnimEvent : MonoBehaviour
         }
     }
 
+    public void SetAllColliderFalse()
+    {
+        BeAttackByPlayerCollider.SetActive(false);
+        AttackPlayerCollider.SetActive(false);
+        MiddleAttackCollider.SetActive(false);
+    }
+
     public void SetAttackColliderTrue()
     {
         BeAttackByPlayerCollider.SetActive(false);
         AttackPlayerCollider.SetActive(true);
+        MiddleAttackCollider.SetActive(false);
     }
     public void SetAttackColliderFalse()
     {
         BeAttackByPlayerCollider.SetActive(true);
         AttackPlayerCollider.SetActive(false);
+        MiddleAttackCollider.SetActive(false);
     }
 
     public void SetBeAttackColliderTrue()
@@ -94,6 +104,19 @@ public class HandAnimEvent : MonoBehaviour
     public void SetBeAttackColliderFalse()
     {
         BeAttackByPlayerCollider.SetActive(false);
+    }
+
+    public void SetMiddleAttackColliderTrue()
+    {
+        BeAttackByPlayerCollider.SetActive(false);
+        AttackPlayerCollider.SetActive(false);
+        MiddleAttackCollider.SetActive(true);
+    }
+    public void SetMiddleAttackColliderFalse()
+    {
+        BeAttackByPlayerCollider.SetActive(true);
+        AttackPlayerCollider.SetActive(false);
+        MiddleAttackCollider.SetActive(false);
     }
 
 
@@ -119,17 +142,24 @@ public class HandAnimEvent : MonoBehaviour
         
     }
 
+    private void MiddleFingerEvent()
+    {
+        Debug.Log("MiddleFingerEvent");
+        StartCoroutine(CameraShake(5));
+
+    }
+
     public void HandMoveDown()
     {
         Debug.Log("手往下");
         ThisIsHand.Instance.StartMoveDown();
     }
-    private IEnumerator CameraShake()
+    private IEnumerator CameraShake(float middleFingerDuration=0)
     {
         var cam = Camera.main;
         if(cam != null)
         {
-            var time = shakeDuration;
+            var time = middleFingerDuration == 0 ? shakeDuration : middleFingerDuration;
             var oPos = cam.transform.localPosition;
             while ((time -= Time.deltaTime )>0)
             {

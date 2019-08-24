@@ -51,7 +51,8 @@ public class ThisIsHand : MonoBehaviour
 
     private void OnEnable()
     {
-        BeAttackCount = 0;
+        if(!IsDebugMode) BeAttackCount = 0;
+
         if (animEvent == null) animEvent = transform.GetChild(0).GetComponent<HandAnimEvent>();
         if (target == null) target = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -67,9 +68,10 @@ public class ThisIsHand : MonoBehaviour
         if (gear.CanHandMove && IsUp == false)
         {
             gear.CanHandMove = false;
-            StartCoroutine(MoveUp(() => SlamAttack()));
+            OnStartAttack();
+
         }
-        
+
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Default"))
         {
@@ -91,12 +93,14 @@ public class ThisIsHand : MonoBehaviour
             OnPlayerAttack();
 
         }
-        UpdateBlood(BeAttackCount);
-
         IsPlayerAttack = false;
+    }
 
-        
-
+    private void OnStartAttack()
+    {
+        Debug.LogError(BeAttackCount);
+        if (BeAttackCount <= 10) StartCoroutine(MoveUp(() => SlamAttack()));
+        if (BeAttackCount > 10) StartCoroutine(MoveUp(() => MiddleFingerAttack()));
     }
 
     private void UpdateBlood(int BeAttackCount)
@@ -123,23 +127,24 @@ public class ThisIsHand : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            StartCoroutine(MoveUp(() => MiddleFingerAttack()));
+            OnStartAttack();
         }
     }
 
     private void OnPlayerAttack()
     {
-        Debug.LogError("HandToDo:被玩家攻擊");
+        Debug.Log($"HandToDo:被玩家攻擊{BeAttackCount}次");
         anim.SetBool("OnAttack", true);
         BeAttackCount++;
+        UpdateBlood(BeAttackCount);
         animEvent.CreateGo(animEvent.particlePrefab[1], 3, this.transform.position);
         animEvent.CreateGo(animEvent.soundPrefab[1], 3, this.transform.position);
     }
 
     private void DebugFakeClick()
     {
-        if(Input.GetMouseButtonDown(0))
-        StartCoroutine(MoveUp(() => SlamAttack()));
+        if (Input.GetMouseButtonDown(0))
+            OnStartAttack();
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -228,13 +233,14 @@ public class ThisIsHand : MonoBehaviour
 
     public void SlamAttack()
     {
-        
+        Debug.Log("SlamAttack");
         anim.SetTrigger("Slam");
         
     }
 
     public void MiddleFingerAttack()
     {
+        Debug.Log("MiddleFingerAttack");
         anim.SetTrigger("MiddleFinger");
     }
 
