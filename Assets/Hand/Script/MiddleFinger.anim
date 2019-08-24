@@ -2324,21 +2324,21 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 4.383333
+  - time: 4.266667
     functionName: IsCanBeAttackFalse
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 4.4166665
+  - time: 4.3
     functionName: HandMoveDown
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 4.6
+  - time: 4.3166666
     functionName: SetAttackingFalse
     data: 
     objectReferenceParameter: {fileID: 0}

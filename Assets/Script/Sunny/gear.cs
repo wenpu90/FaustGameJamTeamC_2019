@@ -19,6 +19,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
 
     void Start()
     {
+        if (handObj == null) handObj = GameObject.FindGameObjectWithTag("Enemy");
         start_speed = Random.Range(0f, 2f);
         radius = Random.Range(0.05f, 0.3f);
         perRadian= Random.Range(1f, 3f);

@@ -108,12 +108,14 @@ public class HandAnimEvent : MonoBehaviour
 
     public void SetMiddleAttackColliderTrue()
     {
+        Debug.Log("SetMiddleAttackColliderTrue");
         BeAttackByPlayerCollider.SetActive(false);
         AttackPlayerCollider.SetActive(false);
         MiddleAttackCollider.SetActive(true);
     }
     public void SetMiddleAttackColliderFalse()
     {
+        Debug.Log("SetMiddleAttackColliderFalse");
         BeAttackByPlayerCollider.SetActive(true);
         AttackPlayerCollider.SetActive(false);
         MiddleAttackCollider.SetActive(false);
