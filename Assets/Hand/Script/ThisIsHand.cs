@@ -35,7 +35,8 @@ public class ThisIsHand : MonoBehaviour
 
     private void OnEnable()
     {
-        state = HandState.moveUp;
+        if (animEvent == null) animEvent = transform.GetChild(0).GetComponent<HandAnimEvent>();
+        if (target == null) target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -55,7 +56,7 @@ public class ThisIsHand : MonoBehaviour
         {
             if(IsUp && !animEvent.IsAttacking)
             {
-                Debug.LogError("DownAnim");
+                Debug.Log("DownAnim");
                 
                 StartCoroutine(MoveDown());
             }
