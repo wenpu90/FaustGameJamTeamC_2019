@@ -54,10 +54,11 @@ public class gear : MonoBehaviour, IPointerClickHandler
                 else if (mouseWeelSpeed > 10)
                     mouseWeelSpeed = 10;
             }
-            this.transform.Rotate(0, start_speed* plus_minus , 0);
+            this.transform.Rotate(0, 0 , start_speed * plus_minus);
 
         }
-        
+        if (playerObj.transform.position.y < -6)
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
     }
 
     public GameObject fallingObj; 

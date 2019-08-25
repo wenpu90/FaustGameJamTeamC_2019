@@ -13,6 +13,10 @@ public class CameraFollow : MonoBehaviour
         isInit = false;
         iniRotation = transform.rotation;
     }
+
+    [Range(0.1f, 10f)] public float LerpAmount;
+    [Range(1f, 10f)] public float upDis;
+    [Range(1f, 10f)] public float backDis;
     void Update()
     {
         if(!isInit)
@@ -21,9 +25,11 @@ public class CameraFollow : MonoBehaviour
             isInit = true;
             Debug.Log("CamInit");
         }
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 3, player.transform.position.z-3);
+        //transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 3, player.transform.position.z-3);
 
-        if(Input.GetKeyDown(initKey))
+        transform.position = Vector3.Lerp(transform.position, new Vector3(player.transform.position.x, player.transform.position.y + upDis, player.transform.position.z - backDis), LerpAmount * Time.deltaTime);
+
+        if (Input.GetKeyDown(initKey))
         {
             GetComponent<CamStartAnim>().TurnOffAnimator();
             transform.rotation = iniRotation;

@@ -12,6 +12,7 @@ public class PowerRange : MonoBehaviour
     {
         OnGetGear();
         lastPos = transform.position;
+        
     }
     void Update()
     {
@@ -56,5 +57,10 @@ public class PowerRange : MonoBehaviour
                 }
             perviousCols = cols;
         }
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        perviousCols = null;
     }
 }
