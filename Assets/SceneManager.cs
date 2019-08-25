@@ -48,6 +48,7 @@ public class SceneManager : MonoBehaviour
 
         if (Input.GetKeyDown(Scene1))
         {
+            gear.isflyout = false;
             SceneIndex = 0;
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
