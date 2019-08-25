@@ -110,8 +110,8 @@ public class ThisIsHand : MonoBehaviour
 
     private void OnStartAttack()
     {
-        if (BeAttackCount <= 10) StartCoroutine(MoveUp(() => SlamAttack()));
-        if (BeAttackCount > 10) StartCoroutine(MoveUp(() => MiddleFingerAttack()));
+        if (BeAttackCount <= 5) StartCoroutine(MoveUp(() => SlamAttack()));
+        if (BeAttackCount > 5) StartCoroutine(MoveUp(() => MiddleFingerAttack()));
     }
 
     private void OnAutoStartAttack(AutoAttack type)
@@ -126,15 +126,15 @@ public class ThisIsHand : MonoBehaviour
         {
             animEvent.BloodParticle[0].SetActive(true);
         }
-        if (BeAttackCount == 5)
+        if (BeAttackCount == 2)
         {
             animEvent.BloodParticle[1].SetActive(true);
         }
-        if (BeAttackCount == 10)
+        if (BeAttackCount == 5)
         {
             animEvent.BloodParticle[2].SetActive(true);
         }
-        if (BeAttackCount == 15)
+        if (BeAttackCount == 7)
         {
             animEvent.BloodParticle[3].SetActive(true);
         }
@@ -156,6 +156,7 @@ public class ThisIsHand : MonoBehaviour
         UpdateBlood(BeAttackCount);
         animEvent.CreateGo(animEvent.particlePrefab[1], 3, this.transform.position);
         animEvent.CreateGo(animEvent.soundPrefab[1], 3, this.transform.position);
+        GameObject.FindObjectOfType<GiantHPUI>().PlayOnAttackAnim();
     }
 
     private void DebugFakeClick()

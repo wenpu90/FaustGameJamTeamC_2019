@@ -24,7 +24,7 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if( SceneIndex ==0 && ThisIsHand.Instance.BeAttackCount > 20)
+        if( SceneIndex ==0 && ThisIsHand.Instance?.BeAttackCount >=10 )
         {
             SceneIndex++;
 
