@@ -4269,7 +4269,7 @@ PrefabInstance:
     - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.5
+      value: -15.4
       objectReference: {fileID: 0}
     - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
         type: 3}
@@ -4316,6 +4316,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 2016281444154410487, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
         type: 3}
       propertyPath: target
@@ -4330,6 +4345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: BeAttackCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2016281444154410487, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: HandMoveOffset.y
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3350203333297086651, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
         type: 3}
@@ -14403,8 +14423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1729674163}
   LerpAmount: 6.47
-  upDis: 5.4
-  backDis: 5.35
+  upDis: 10
+  backDis: 10
 --- !u!4 &2068169075
 Transform:
   m_ObjectHideFlags: 0
@@ -14761,7 +14781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa091f2ce7c9a0a49a2d0986c82ebea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1421414638}
+  target: {fileID: 1729674169}
   IsLerp: 1
   LerpAmount: 1.32
 --- !u!4 &2134600516

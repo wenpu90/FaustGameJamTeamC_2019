@@ -21,7 +21,7 @@ public class HandAttackPlayerCollider : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.LogError("手攻擊到玩家了");
-            collision.rigidbody.AddForce(new Vector3(1, 2, 1) * 10000);
+            collision.rigidbody.AddForce(new Vector3(1, 2, 1) * 3000);
         }
             //ThisIsHand.Instance.IsPlayerAttack = true;
     }

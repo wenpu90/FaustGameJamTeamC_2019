@@ -132,7 +132,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
 
         Debug.Log(gear_boom.transform.up * 2);
         gear_boom.GetComponent<Rigidbody>().AddForce(new Vector3(1, 2, 1)*100);
-        playerObj.GetComponent<Rigidbody>().AddForce(new Vector3(1, 2, 1)*10000);
+        playerObj.GetComponent<Rigidbody>().AddForce(new Vector3(1, 2, 1)*10);
 
     }
 
