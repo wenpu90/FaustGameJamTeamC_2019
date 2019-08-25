@@ -71,7 +71,7 @@ public class NewController : MonoBehaviour {
         {
             dashTimer -= Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.U) )
+        if (Input.GetKeyDown(KeyCode.U) && dashTimer <= 0)
         {
             dashTimer = 1f;
             Invoke("VectorZero", 0.3f);
