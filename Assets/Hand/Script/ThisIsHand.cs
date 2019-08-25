@@ -205,6 +205,7 @@ public class ThisIsHand : MonoBehaviour
     public IEnumerator MoveUp(Action attack)
     {
         Debug.Log("HandMoveUp");
+        bool IsPlayHandUpAnim = false;
         animEvent.JohnCenaSFX();
         originalPos = transform.position;
         _targetPosition = target.position;
@@ -215,6 +216,11 @@ public class ThisIsHand : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, targetPos, HandMoveSpeed);
             Debug.Log("HandUPing");
+            if (transform.position.y >= 0 && !IsPlayHandUpAnim)
+            {
+                animEvent.HandUpParticle();
+                IsPlayHandUpAnim = true;
+            }
             yield return null;
         }
         transform.position = targetPos;
