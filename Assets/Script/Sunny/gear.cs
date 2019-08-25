@@ -49,10 +49,10 @@ public class gear : MonoBehaviour, IPointerClickHandler
                 mouseWeelSpeed+= Input.GetAxis("Mouse ScrollWheel")*5;
                 start_speed = (start_speed* Time.deltaTime) + mouseWeelSpeed;
 
-                if (mouseWeelSpeed < -15)
-                    mouseWeelSpeed = -15;
-                else if (mouseWeelSpeed > 15)
-                    mouseWeelSpeed = 15;
+                if (mouseWeelSpeed < -10)
+                    mouseWeelSpeed = -10;
+                else if (mouseWeelSpeed > 10)
+                    mouseWeelSpeed = 10;
             }
             this.transform.Rotate(0, start_speed* plus_minus , 0);
 
@@ -62,6 +62,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
 
     public GameObject fallingObj; 
     public GameObject handObj; 
+    public GameObject playerObj; 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (!canControl) return;
@@ -71,6 +72,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
             is_out = isflyout = true;
             //Debug.Log("Left");
             fallingObj.transform.position = transform.position;
+            playerObj.transform.SetParent(null);
             transform.position = new Vector3(10000, 0, 0);
             fallingObj.GetComponent<Falling>().GoFalling();
 
@@ -86,6 +88,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
             //Debug.Log("Right");
             is_out = isflyout = CanHandMove = true;
             handObj.transform.position = new Vector3(transform.position.x, transform.position.y-3, transform.position.z);
+            playerObj.transform.SetParent(null);
             transform.position = new Vector3(10000, 0, 0);
             gearFlyOut();
 
