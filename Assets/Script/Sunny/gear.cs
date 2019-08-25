@@ -65,7 +65,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
     public GameObject playerObj; 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!canControl) return;
+        if (!canControl || isflyout) return;
         /*if (eventData.clickCount == 2 && !is_out){ Debug.Log("eventData.clickCount == 2"); }*/
         if (eventData.button == PointerEventData.InputButton.Left && !is_out)
         {
@@ -120,8 +120,9 @@ public class gear : MonoBehaviour, IPointerClickHandler
         gear_boom.GetComponent<Rigidbody>().useGravity = true;
 
         Debug.Log(gear_boom.transform.up * 2);
-        gear_boom.GetComponent<Rigidbody>().AddForce(new Vector3(1,2,1));
-        
+        gear_boom.GetComponent<Rigidbody>().AddForce(new Vector3(1, 2, 1)*100);
+        playerObj.GetComponent<Rigidbody>().AddForce(new Vector3(1, 2, 1)*10000);
+
     }
 
     
