@@ -240,8 +240,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &10601786
 MonoBehaviour:
@@ -478,8 +478,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &29404201
 MonoBehaviour:
@@ -642,8 +642,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &39456947
 MonoBehaviour:
@@ -836,8 +836,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &74490845
 MonoBehaviour:
@@ -988,7 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba60db2f750b034dab9791e8f898e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1133639244}
+  player: {fileID: 522840237}
   LerpAmount: 6.47
   upDis: 5.4
   backDis: 5.35
@@ -1151,8 +1151,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &92426678
 MonoBehaviour:
@@ -1445,8 +1445,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &113933620
 MonoBehaviour:
@@ -1482,85 +1482,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1001 &115332165
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8224947856885934286, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_Name
-      value: AttackHand (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423613844516867826, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4404269803408835343, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1133639250}
-    - target: {fileID: 619818246360557123, guid: aa2dcd928c87f4644846c13fafc73dac,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1133639250}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aa2dcd928c87f4644846c13fafc73dac, type: 3}
 --- !u!1 &124912654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,8 +1609,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &124912661
 MonoBehaviour:
@@ -1852,8 +1773,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &133454785
 MonoBehaviour:
@@ -2047,8 +1968,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &149238737
 MonoBehaviour:
@@ -2211,8 +2132,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &152595895
 MonoBehaviour:
@@ -6996,8 +6917,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &161189605
 MonoBehaviour:
@@ -7059,7 +6980,7 @@ RectTransform:
   m_GameObject: {fileID: 166326412}
   m_LocalRotation: {x: 0.000000029802315, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.3, z: 0.5}
+  m_LocalScale: {x: 0.35, y: 0.3, z: 0.5}
   m_Children:
   - {fileID: 375584220}
   - {fileID: 517476772}
@@ -7070,8 +6991,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 296.22, y: 100}
+  m_AnchoredPosition: {x: -7.69, y: -3.67}
+  m_SizeDelta: {x: 315.46, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &166326414
 MonoBehaviour:
@@ -7223,8 +7144,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &195438313
 MonoBehaviour:
@@ -7418,8 +7339,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &197225431
 MonoBehaviour:
@@ -7582,8 +7503,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &238253706
 MonoBehaviour:
@@ -7619,71 +7540,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1001 &256786303
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_Name
-      value: cog2
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_RootOrder
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 400d9da7a7770ed4180418206063575c, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 49f732ca1e3ea9a449f2e97ec9dacb32, type: 3}
 --- !u!1 &282879266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7811,8 +7667,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &282879273
 MonoBehaviour:
@@ -7972,7 +7828,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &293793335
 MonoBehaviour:
@@ -7990,8 +7846,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!54 &293793336
 Rigidbody:
@@ -8043,75 +7899,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1001 &314096376
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_Name
-      value: cog
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_RootOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 400d9da7a7770ed4180418206063575c, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
 --- !u!1 &324981982
 GameObject:
   m_ObjectHideFlags: 0
@@ -8411,8 +8198,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &378005011
 MonoBehaviour:
@@ -8608,8 +8395,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &415550842
 MonoBehaviour:
@@ -8687,7 +8474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &438418109
 GameObject:
@@ -8816,8 +8603,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &438418116
 MonoBehaviour:
@@ -8980,8 +8767,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &451977768
 MonoBehaviour:
@@ -9144,8 +8931,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &474719113
 MonoBehaviour:
@@ -9306,7 +9093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &522840238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9417,99 +9204,7 @@ Transform:
   m_Children:
   - {fileID: 1015848586}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &537045164
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 537045168}
-  - component: {fileID: 537045167}
-  - component: {fileID: 537045166}
-  - component: {fileID: 537045165}
-  m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!64 &537045165
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537045164}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &537045166
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537045164}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &537045167
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537045164}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &537045168
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537045164}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559762087
 GameObject:
@@ -9638,8 +9333,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &559762094
 MonoBehaviour:
@@ -9802,8 +9497,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &565878938
 MonoBehaviour:
@@ -9966,8 +9661,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &573070677
 MonoBehaviour:
@@ -10197,7 +9892,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &608867260
 MonoBehaviour:
@@ -10215,8 +9910,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &608867261
 MonoBehaviour:
@@ -10395,8 +10090,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &647388721
 MonoBehaviour:
@@ -10559,8 +10254,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &658338638
 MonoBehaviour:
@@ -10723,8 +10418,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &691783353
 MonoBehaviour:
@@ -10992,8 +10687,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &737730345
 MonoBehaviour:
@@ -11156,8 +10851,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &748822761
 MonoBehaviour:
@@ -11351,8 +11046,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &755465243
 MonoBehaviour:
@@ -11515,8 +11210,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &765154678
 MonoBehaviour:
@@ -11552,75 +11247,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1001 &776353019
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2872525931644884643, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerYuQi (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e, type: 3}
 --- !u!1 &777036790
 GameObject:
   m_ObjectHideFlags: 0
@@ -11779,8 +11405,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &819494859
 MonoBehaviour:
@@ -11943,8 +11569,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &842101960
 MonoBehaviour:
@@ -12107,8 +11733,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &845423089
 MonoBehaviour:
@@ -12144,12 +11770,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1 &847376023 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8224947856885934286, guid: aa2dcd928c87f4644846c13fafc73dac,
-    type: 3}
-  m_PrefabInstance: {fileID: 115332165}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &856704239
 GameObject:
   m_ObjectHideFlags: 0
@@ -12277,8 +11897,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &856704246
 MonoBehaviour:
@@ -12416,7 +12036,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865698506
 GameObject:
@@ -12578,8 +12198,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &872125376
 MonoBehaviour:
@@ -12773,8 +12393,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &924390595
 MonoBehaviour:
@@ -12937,8 +12557,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &936490351
 MonoBehaviour:
@@ -13101,8 +12721,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &949968813
 MonoBehaviour:
@@ -13265,8 +12885,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &953142982
 MonoBehaviour:
@@ -18142,8 +17762,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &970726503
 MonoBehaviour:
@@ -18306,8 +17926,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &971519551
 MonoBehaviour:
@@ -18470,8 +18090,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &973957380
 MonoBehaviour:
@@ -18507,6 +18127,132 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &983009160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983009161}
+  - component: {fileID: 983009162}
+  m_Layer: 0
+  m_Name: Trail (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &983009161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983009160}
+  m_LocalRotation: {x: -0.121007025, y: -0.004138276, z: 0.03157698, w: 0.99214065}
+  m_LocalPosition: {x: -1.25, y: 1.1, z: 1.53}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_Children: []
+  m_Father: {fileID: 1320228464}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!96 &983009162
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983009160}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 0.2
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.010929108
+        value: 0.041664124
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 0.43867922, g: 1, b: 0.9366591, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 1}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 39255
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 65535
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 1
+  m_MinVertexDistance: 0.01
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!1 &997853640
 GameObject:
   m_ObjectHideFlags: 0
@@ -18634,8 +18380,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &997853647
 MonoBehaviour:
@@ -18850,8 +18596,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1016315113
 MonoBehaviour:
@@ -19045,8 +18791,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1019637776
 MonoBehaviour:
@@ -19209,8 +18955,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1028735085
 MonoBehaviour:
@@ -19373,8 +19119,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1045442920
 MonoBehaviour:
@@ -19537,8 +19283,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1047478551
 MonoBehaviour:
@@ -24225,7 +23971,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1126192085
 BoxCollider:
@@ -24383,8 +24129,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1128619128
 MonoBehaviour:
@@ -24420,18 +24166,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1 &1133639244 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2872525931644884643, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-    type: 3}
-  m_PrefabInstance: {fileID: 776353019}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1133639250 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2872525931644884646, guid: 4a0eafff9cd36ef4b93ed45a2ad97f9e,
-    type: 3}
-  m_PrefabInstance: {fileID: 776353019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1135347335
 GameObject:
   m_ObjectHideFlags: 0
@@ -24559,8 +24293,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1135347342
 MonoBehaviour:
@@ -24723,8 +24457,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1135862357
 MonoBehaviour:
@@ -24887,8 +24621,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1139716607
 MonoBehaviour:
@@ -25030,7 +24764,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193060586
 GameObject:
@@ -25328,8 +25062,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1235601677
 MonoBehaviour:
@@ -25523,8 +25257,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1276537348
 MonoBehaviour:
@@ -25687,8 +25421,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1286775997
 MonoBehaviour:
@@ -25851,8 +25585,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1290413225
 MonoBehaviour:
@@ -26015,8 +25749,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1302163829
 MonoBehaviour:
@@ -26179,8 +25913,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1318509944
 MonoBehaviour:
@@ -26243,6 +25977,8 @@ Transform:
   m_LocalPosition: {x: -0, y: 1.2653699, z: 0.08490688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1343668537}
+  - {fileID: 983009161}
   - {fileID: 1588510667}
   m_Father: {fileID: 324981983}
   m_RootOrder: 0
@@ -26374,8 +26110,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1321557927
 MonoBehaviour:
@@ -26478,8 +26214,134 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1343668536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343668537}
+  - component: {fileID: 1343668538}
+  m_Layer: 0
+  m_Name: Trail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1343668537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343668536}
+  m_LocalRotation: {x: -0.121007025, y: -0.004138276, z: 0.03157698, w: 0.99214065}
+  m_LocalPosition: {x: 1.3, y: 1.26, z: 1.53}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_Children: []
+  m_Father: {fileID: 1320228464}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!96 &1343668538
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343668536}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 0.2
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.010929108
+        value: 0.041664124
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 0.43867922, g: 1, b: 0.9366591, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 1
+  m_MinVertexDistance: 0.01
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!1 &1349334823
 GameObject:
   m_ObjectHideFlags: 0
@@ -26607,8 +26469,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1349334830
 MonoBehaviour:
@@ -26771,8 +26633,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1352444171
 MonoBehaviour:
@@ -26828,7 +26690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &1362161891
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27056,8 +26918,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1374424309
 MonoBehaviour:
@@ -27200,7 +27062,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1382239840
 MonoBehaviour:
@@ -27341,8 +27203,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1384228859
 MonoBehaviour:
@@ -27505,8 +27367,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1394124132
 MonoBehaviour:
@@ -27669,8 +27531,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1409185088
 MonoBehaviour:
@@ -27833,8 +27695,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1425183559
 MonoBehaviour:
@@ -27997,8 +27859,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1462641296
 MonoBehaviour:
@@ -28254,8 +28116,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1489863426
 MonoBehaviour:
@@ -28449,8 +28311,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1513933757
 MonoBehaviour:
@@ -28517,97 +28379,6 @@ Transform:
   - {fileID: 1362161896}
   m_Father: {fileID: 777036791}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1557084334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1557084338}
-  - component: {fileID: 1557084337}
-  - component: {fileID: 1557084336}
-  - component: {fileID: 1557084335}
-  m_Layer: 0
-  m_Name: 000 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!65 &1557084335
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557084334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1557084336
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557084334}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1557084337
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557084334}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1557084338
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557084334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 2, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1557852635
 GameObject:
@@ -28736,8 +28507,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1557852642
 MonoBehaviour:
@@ -28866,7 +28637,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1558175707
 MonoBehaviour:
@@ -28884,8 +28655,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!54 &1558175708
 Rigidbody:
@@ -29064,8 +28835,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1584895546
 MonoBehaviour:
@@ -29129,7 +28900,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1320228464}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1598858181
 GameObject:
@@ -29258,8 +29029,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1598858188
 MonoBehaviour:
@@ -29422,8 +29193,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1601010805
 MonoBehaviour:
@@ -29459,91 +29230,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1001 &1611491967
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_Name
-      value: 1@Idle
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_RootOrder
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: f1975244056ebd845845ce239690239d, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: bec9b3e2b877219468de55aa894704fc, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f1975244056ebd845845ce239690239d, type: 3}
 --- !u!1 &1638528751
 GameObject:
   m_ObjectHideFlags: 0
@@ -29671,8 +29357,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1638528758
 MonoBehaviour:
@@ -29835,8 +29521,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1646587194
 MonoBehaviour:
@@ -29999,8 +29685,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1647527365
 MonoBehaviour:
@@ -30194,8 +29880,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1693710970
 MonoBehaviour:
@@ -30358,8 +30044,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1727347998
 MonoBehaviour:
@@ -30553,8 +30239,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1767627234
 MonoBehaviour:
@@ -30717,8 +30403,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1784741370
 MonoBehaviour:
@@ -30880,7 +30566,7 @@ Transform:
   - {fileID: 1598858182}
   - {fileID: 124912655}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804594706
 GameObject:
@@ -30975,7 +30661,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.076855, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1804594711
 MonoBehaviour:
@@ -30993,8 +30679,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!54 &1804594712
 Rigidbody:
@@ -31046,97 +30732,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1 &1846930310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1846930314}
-  - component: {fileID: 1846930313}
-  - component: {fileID: 1846930312}
-  - component: {fileID: 1846930311}
-  m_Layer: 0
-  m_Name: 202
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!65 &1846930311
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846930310}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1846930312
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846930310}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1846930313
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846930310}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1846930314
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846930310}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849714479
 GameObject:
   m_ObjectHideFlags: 0
@@ -31264,8 +30859,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1849714486
 MonoBehaviour:
@@ -31428,8 +31023,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1857711279
 MonoBehaviour:
@@ -31684,8 +31279,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1879071516
 MonoBehaviour:
@@ -31848,8 +31443,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1892642248
 MonoBehaviour:
@@ -31885,71 +31480,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1001 &1912374933
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_Name
-      value: cog3
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_RootOrder
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 400d9da7a7770ed4180418206063575c, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 73169aa1d1e2aec40b1bf9874a5e4918, type: 3}
 --- !u!1 &1920128967
 GameObject:
   m_ObjectHideFlags: 0
@@ -32077,8 +31607,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1920128974
 MonoBehaviour:
@@ -32241,8 +31771,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1930607053
 MonoBehaviour:
@@ -32405,8 +31935,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1936691678
 MonoBehaviour:
@@ -32569,8 +32099,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1938227333
 MonoBehaviour:
@@ -32733,8 +32263,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1950556351
 MonoBehaviour:
@@ -32770,97 +32300,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1 &1985644786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1985644790}
-  - component: {fileID: 1985644789}
-  - component: {fileID: 1985644788}
-  - component: {fileID: 1985644787}
-  m_Layer: 0
-  m_Name: 000
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!65 &1985644787
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985644786}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1985644788
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985644786}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1985644789
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985644786}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1985644790
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985644786}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1989198508
 GameObject:
   m_ObjectHideFlags: 0
@@ -32988,8 +32427,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &1989198515
 MonoBehaviour:
@@ -33152,8 +32591,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2009249532
 MonoBehaviour:
@@ -33316,8 +32755,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2011101661
 MonoBehaviour:
@@ -33353,97 +32792,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!1 &2021943741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2021943745}
-  - component: {fileID: 2021943744}
-  - component: {fileID: 2021943743}
-  - component: {fileID: 2021943742}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!65 &2021943742
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021943741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2021943743
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021943741}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 4e6603ab4a3288a4f8272c267a3a2838, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2021943744
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021943741}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2021943745
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021943741}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.29, z: 0}
-  m_LocalScale: {x: 10, y: 0.5, z: 10}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030224762
 GameObject:
   m_ObjectHideFlags: 0
@@ -33571,8 +32919,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2030224769
 MonoBehaviour:
@@ -33766,8 +33114,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2061872655
 MonoBehaviour:
@@ -33930,8 +33278,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2067077900
 MonoBehaviour:
@@ -34094,8 +33442,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2103418906
 MonoBehaviour:
@@ -34258,8 +33606,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2103909689
 MonoBehaviour:
@@ -34422,8 +33770,8 @@ MonoBehaviour:
   start_speed: 1
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
-  handObj: {fileID: 847376023}
-  playerObj: {fileID: 1133639244}
+  handObj: {fileID: 8224947856974560395}
+  playerObj: {fileID: 522840237}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &2106077115
 MonoBehaviour:
@@ -34541,7 +33889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa091f2ce7c9a0a49a2d0986c82ebea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1133639250}
+  target: {fileID: 522840243}
   IsLerp: 1
   LerpAmount: 1.32
 --- !u!33 &2134600515
@@ -34566,3 +33914,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2802463030950957757
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6107086947143593526, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_Name
+      value: AttackHand_new
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983708221236135946, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2016281444154410487, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 522840243}
+    - target: {fileID: 3350203333297086651, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 522840243}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65c3eefba88b0de4ebe581a4ae01a2ac, type: 3}
+--- !u!1 &8224947856974560395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6107086947143593526, guid: 65c3eefba88b0de4ebe581a4ae01a2ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2802463030950957757}
+  m_PrefabAsset: {fileID: 0}
