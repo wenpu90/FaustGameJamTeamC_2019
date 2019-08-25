@@ -8,13 +8,16 @@ public class GiantHPUI : MonoBehaviour
     private  float startDelay = 1f;
     private float intervalTime = 0.2f;
     public List<Image> HPIcons;
-
+    private int HpIndex;
 
     private void Awake()
     {
+        HpIndex = 0;
         foreach (var hp in HPIcons)
         {
             hp.enabled = false;
+            HpIndex++;
+
         }
     }
     // Start is called before the first frame update
@@ -33,9 +36,10 @@ public class GiantHPUI : MonoBehaviour
             hp.enabled = true;
         }
     }
-    // Update is called once per frame
-    void Update()
+
+    public void PlayOnAttackAnim()
     {
-        
+        HPIcons[HpIndex - 1].transform.gameObject.GetComponent<Animator>().SetTrigger("OnDamage");
+        HpIndex--;
     }
 }

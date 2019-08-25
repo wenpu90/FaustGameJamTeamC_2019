@@ -156,6 +156,7 @@ public class ThisIsHand : MonoBehaviour
         UpdateBlood(BeAttackCount);
         animEvent.CreateGo(animEvent.particlePrefab[1], 3, this.transform.position);
         animEvent.CreateGo(animEvent.soundPrefab[1], 3, this.transform.position);
+        GameObject.FindObjectOfType<GiantHPUI>().PlayOnAttackAnim();
     }
 
     private void DebugFakeClick()
