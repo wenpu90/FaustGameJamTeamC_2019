@@ -43,6 +43,7 @@ public class HandAnimEvent : MonoBehaviour
         soundPrefab.Add((GameObject)Resources.Load("Hand/apear"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/危!"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/再來啊!"));
+        particlePrefab.Add((GameObject)Resources.Load("Hand/handup"));
         //SetAttackColliderFalse();
         //SetBeAttackColliderFalse();
         SetAllColliderFalse();
@@ -211,8 +212,13 @@ public class HandAnimEvent : MonoBehaviour
 
     public void JohnCenaSFX()
     {
-        if (GameObject.FindGameObjectsWithTag("AnnoyJohnCena").Length > 1) return;
-        CreateGo(soundPrefab[2], 10, Vector3.zero);
+        //if (GameObject.FindGameObjectsWithTag("AnnoyJohnCena").Length > 1) return;
+        //CreateGo(soundPrefab[2], 10, Vector3.zero);
+    }
+
+    public void HandUpParticle()
+    {
+        CreateGo(particlePrefab[2], 10, transform.position);
     }
 
 
