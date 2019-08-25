@@ -14,7 +14,7 @@ public class Falling : MonoBehaviour
     void Init()
     {
         originalPointY=transform.position.y;
-        fallingPointY = transform.position.y-3;
+        fallingPointY = transform.position.y-10;
         posX = gameObject.transform.position.x;
         posZ = gameObject.transform.position.z;
     }
@@ -33,11 +33,10 @@ public class Falling : MonoBehaviour
         isPulling = true;
         StartCoroutine( DoTransform(2, transform.position, new Vector3(posX, fallingPointY, posZ)));
 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2.2f);
 
         StartCoroutine(DoTransform(4, transform.position, new Vector3(posX, originalPointY, posZ)));
-        yield return new WaitForSeconds(4.5f);
-        transform.position = new Vector3(10000, 0, 0);
+        yield return new WaitForSeconds(4.2f);
     }
 
     IEnumerator DoTransform(float duration, Vector3 posStart, Vector3 posEnd)

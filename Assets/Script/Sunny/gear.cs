@@ -17,13 +17,11 @@ public class gear : MonoBehaviour, IPointerClickHandler
     float radius; //高度變化，最好小於0.3
     int plus_minus = 1;
 
-    AudioSource boom;
-    public GameObject sound;
+    public AudioSource boom_sound;
+    public AudioSource gearMoving_sound;
 
     void Start()
     {
-        boom = sound.GetComponent<AudioSource>();
-
         if (handObj == null) handObj = GameObject.FindGameObjectWithTag("Enemy");
         start_speed = Random.Range(0f, 2f);
         radius = Random.Range(0.05f, 0.3f);
@@ -66,7 +64,6 @@ public class gear : MonoBehaviour, IPointerClickHandler
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
     }
 
-    public GameObject fallingObj; 
     public GameObject handObj; 
     public GameObject playerObj; 
     public void OnPointerClick(PointerEventData eventData)
@@ -75,14 +72,13 @@ public class gear : MonoBehaviour, IPointerClickHandler
         /*if (eventData.clickCount == 2 && !is_out){ Debug.Log("eventData.clickCount == 2"); }*/
         if (eventData.button == PointerEventData.InputButton.Left && !is_out)
         {
+            gearMoving_sound.Play();
             is_out = isflyout = true;
             //Debug.Log("Left");
-            fallingObj.transform.position = transform.position;
             playerObj.transform.SetParent(null);
-            transform.position = new Vector3(10000, 0, 0);
-            fallingObj.GetComponent<Falling>().GoFalling();
+            this.GetComponent<Falling>().GoFalling();
 
-            Invoke("PutBackObject_L", 6.8f);
+            Invoke("PutBackObject_L", 6.5f);
         }
         else if (eventData.button == PointerEventData.InputButton.Middle)
         {
@@ -99,14 +95,14 @@ public class gear : MonoBehaviour, IPointerClickHandler
             gearFlyOut();
 
             Invoke("PutBackObject_R", 10);
-            Invoke("boomSound", 4.3f);
+            Invoke("boomSound", 4.5f);
         }
     }
 
 
     public void boomSound()
     {
-        boom.Play();
+        boom_sound.Play();
     }
     public void PutBackObject_R()
     {
