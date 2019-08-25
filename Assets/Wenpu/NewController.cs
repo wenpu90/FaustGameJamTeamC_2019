@@ -86,7 +86,7 @@ public class NewController : MonoBehaviour {
     }
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && isGrouned)
         {
             rb.velocity = transform.up * jumpForce;
             anim.SetTrigger("jump");
@@ -112,7 +112,7 @@ public class NewController : MonoBehaviour {
     void RigidBodyInitialize()
     {
         rb.mass = 100;
-        rb.drag = 1;
+        rb.drag = 0;
         rb.freezeRotation = true;
     }
     void OnCollisionEnter(Collision collision)

@@ -127,6 +127,8 @@ GameObject:
   - component: {fileID: 10601783}
   - component: {fileID: 10601782}
   - component: {fileID: 10601781}
+  - component: {fileID: 10601787}
+  - component: {fileID: 10601786}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (17)"
   m_TagString: Ground
@@ -237,9 +239,118 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &10601786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10601779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &10601787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10601779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!1 &12188312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 12188313}
+  - component: {fileID: 12188315}
+  - component: {fileID: 12188314}
+  m_Layer: 5
+  m_Name: H2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &12188313
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12188312}
+  m_LocalRotation: {x: 0.000000029802315, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 734984648}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &12188314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12188312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: e4f912a7c676cd04d8104fa3dc2889af, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &12188315
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12188312}
+  m_CullTransparentMesh: 0
 --- !u!1 &29404194
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +365,8 @@ GameObject:
   - component: {fileID: 29404198}
   - component: {fileID: 29404197}
   - component: {fileID: 29404196}
+  - component: {fileID: 29404202}
+  - component: {fileID: 29404201}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (25)"
   m_TagString: Ground
@@ -364,9 +477,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &29404201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29404194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &29404202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29404194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &39456940
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +529,8 @@ GameObject:
   - component: {fileID: 39456944}
   - component: {fileID: 39456943}
   - component: {fileID: 39456942}
+  - component: {fileID: 39456948}
+  - component: {fileID: 39456947}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (3)"
   m_TagString: Ground
@@ -491,9 +641,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &39456947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39456940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &39456948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39456940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &74490838
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +693,8 @@ GameObject:
   - component: {fileID: 74490842}
   - component: {fileID: 74490841}
   - component: {fileID: 74490840}
+  - component: {fileID: 74490846}
+  - component: {fileID: 74490845}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (17)"
   m_TagString: Ground
@@ -618,9 +805,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &74490845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74490838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &74490846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74490838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &86711069
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,9 +925,10 @@ Transform:
   m_LocalRotation: {x: 0.32859284, y: -0, z: -0, w: 0.9444717}
   m_LocalPosition: {x: -0.98, y: 3.22, z: 7.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 96217696}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 38.367, y: 0, z: 0}
 --- !u!114 &86711073
 MonoBehaviour:
@@ -781,6 +1004,8 @@ GameObject:
   - component: {fileID: 92426675}
   - component: {fileID: 92426674}
   - component: {fileID: 92426673}
+  - component: {fileID: 92426679}
+  - component: {fileID: 92426678}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (5)"
   m_TagString: Ground
@@ -891,9 +1116,145 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &92426678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92426671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &92426679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92426671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!1 &96217695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96217696}
+  - component: {fileID: 96217699}
+  - component: {fileID: 96217698}
+  - component: {fileID: 96217697}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &96217696
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96217695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 375584220}
+  - {fileID: 517476772}
+  - {fileID: 734984648}
+  m_Father: {fileID: 86711072}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &96217697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96217695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &96217698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96217695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &96217699
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96217695}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 86711071}
+  m_PlaneDistance: 0.3
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &113933613
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +1269,8 @@ GameObject:
   - component: {fileID: 113933617}
   - component: {fileID: 113933616}
   - component: {fileID: 113933615}
+  - component: {fileID: 113933621}
+  - component: {fileID: 113933620}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (16)"
   m_TagString: Ground
@@ -1018,9 +1381,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &113933620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113933613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &113933621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113933613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &115332165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1104,6 +1502,8 @@ GameObject:
   - component: {fileID: 124912658}
   - component: {fileID: 124912657}
   - component: {fileID: 124912656}
+  - component: {fileID: 124912662}
+  - component: {fileID: 124912661}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (37)"
   m_TagString: Ground
@@ -1214,9 +1614,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &124912661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124912654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &124912662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124912654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &133454778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1666,8 @@ GameObject:
   - component: {fileID: 133454782}
   - component: {fileID: 133454781}
   - component: {fileID: 133454780}
+  - component: {fileID: 133454786}
+  - component: {fileID: 133454785}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (11)"
   m_TagString: Ground
@@ -1341,9 +1778,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &133454785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133454778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &133454786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133454778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &149238730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1830,8 @@ GameObject:
   - component: {fileID: 149238734}
   - component: {fileID: 149238733}
   - component: {fileID: 149238732}
+  - component: {fileID: 149238738}
+  - component: {fileID: 149238737}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (22)"
   m_TagString: Ground
@@ -1468,9 +1942,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &149238737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149238730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &149238738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149238730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &152595888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1994,8 @@ GameObject:
   - component: {fileID: 152595892}
   - component: {fileID: 152595891}
   - component: {fileID: 152595890}
+  - component: {fileID: 152595896}
+  - component: {fileID: 152595895}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (20)"
   m_TagString: Ground
@@ -1595,9 +2106,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &152595895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152595888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &152595896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152595888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &154239714
 GameObject:
   m_ObjectHideFlags: 0
@@ -6233,6 +6779,8 @@ GameObject:
   - component: {fileID: 161189602}
   - component: {fileID: 161189601}
   - component: {fileID: 161189600}
+  - component: {fileID: 161189606}
+  - component: {fileID: 161189605}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (7)"
   m_TagString: Ground
@@ -6343,9 +6891,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &161189605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161189598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &161189606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161189598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &195438306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,6 +6943,8 @@ GameObject:
   - component: {fileID: 195438310}
   - component: {fileID: 195438309}
   - component: {fileID: 195438308}
+  - component: {fileID: 195438314}
+  - component: {fileID: 195438313}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (35)"
   m_TagString: Ground
@@ -6470,9 +7055,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &195438313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195438306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &195438314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195438306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &197225424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,6 +7107,8 @@ GameObject:
   - component: {fileID: 197225428}
   - component: {fileID: 197225427}
   - component: {fileID: 197225426}
+  - component: {fileID: 197225432}
+  - component: {fileID: 197225431}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (19)"
   m_TagString: Ground
@@ -6597,9 +7219,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &197225431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197225424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &197225432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197225424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &238253699
 GameObject:
   m_ObjectHideFlags: 0
@@ -6614,6 +7271,8 @@ GameObject:
   - component: {fileID: 238253703}
   - component: {fileID: 238253702}
   - component: {fileID: 238253701}
+  - component: {fileID: 238253707}
+  - component: {fileID: 238253706}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (26)"
   m_TagString: Ground
@@ -6724,9 +7383,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &238253706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238253699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &238253707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238253699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &256786303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6806,6 +7500,8 @@ GameObject:
   - component: {fileID: 282879270}
   - component: {fileID: 282879269}
   - component: {fileID: 282879268}
+  - component: {fileID: 282879274}
+  - component: {fileID: 282879273}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (23)"
   m_TagString: Ground
@@ -6916,9 +7612,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &282879273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282879266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &282879274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282879266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &293793330
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,6 +7664,8 @@ GameObject:
   - component: {fileID: 293793332}
   - component: {fileID: 293793331}
   - component: {fileID: 293793336}
+  - component: {fileID: 293793338}
+  - component: {fileID: 293793337}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02"
   m_TagString: Ground
@@ -7027,9 +7760,10 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
 --- !u!54 &293793336
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7046,6 +7780,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &293793337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293793330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &293793338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293793330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &314096376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7115,6 +7883,85 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 400d9da7a7770ed4180418206063575c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e872c45c9bac3942b53c43ae3b32689, type: 3}
+--- !u!1 &375584219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375584220}
+  - component: {fileID: 375584222}
+  - component: {fileID: 375584221}
+  m_Layer: 5
+  m_Name: giant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &375584220
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375584219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 96217696}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 83.70001, y: 40}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &375584221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375584219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Giant
+--- !u!222 &375584222
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375584219}
+  m_CullTransparentMesh: 0
 --- !u!1 &378005004
 GameObject:
   m_ObjectHideFlags: 0
@@ -7129,6 +7976,8 @@ GameObject:
   - component: {fileID: 378005008}
   - component: {fileID: 378005007}
   - component: {fileID: 378005006}
+  - component: {fileID: 378005012}
+  - component: {fileID: 378005011}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (4)"
   m_TagString: Ground
@@ -7239,9 +8088,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &378005011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378005004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &378005012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378005004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &415550835
 GameObject:
   m_ObjectHideFlags: 0
@@ -7256,6 +8140,8 @@ GameObject:
   - component: {fileID: 415550839}
   - component: {fileID: 415550838}
   - component: {fileID: 415550837}
+  - component: {fileID: 415550843}
+  - component: {fileID: 415550842}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (28)"
   m_TagString: Ground
@@ -7366,9 +8252,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &415550842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415550835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &415550843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415550835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &429627724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7427,6 +8348,8 @@ GameObject:
   - component: {fileID: 438418113}
   - component: {fileID: 438418112}
   - component: {fileID: 438418111}
+  - component: {fileID: 438418117}
+  - component: {fileID: 438418116}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (3)"
   m_TagString: Ground
@@ -7537,9 +8460,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &438418116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438418109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &438418117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438418109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &451977761
 GameObject:
   m_ObjectHideFlags: 0
@@ -7554,6 +8512,8 @@ GameObject:
   - component: {fileID: 451977765}
   - component: {fileID: 451977764}
   - component: {fileID: 451977763}
+  - component: {fileID: 451977769}
+  - component: {fileID: 451977768}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (29)"
   m_TagString: Ground
@@ -7664,9 +8624,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &451977768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451977761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &451977769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451977761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &474719106
 GameObject:
   m_ObjectHideFlags: 0
@@ -7681,6 +8676,8 @@ GameObject:
   - component: {fileID: 474719110}
   - component: {fileID: 474719109}
   - component: {fileID: 474719108}
+  - component: {fileID: 474719114}
+  - component: {fileID: 474719113}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (10)"
   m_TagString: Ground
@@ -7791,9 +8788,118 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &474719113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474719106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &474719114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474719106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!1 &517476771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 517476772}
+  - component: {fileID: 517476774}
+  - component: {fileID: 517476773}
+  m_Layer: 5
+  m_Name: H1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &517476772
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517476771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_Children: []
+  m_Father: {fileID: 96217696}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &517476773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517476771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: e4f912a7c676cd04d8104fa3dc2889af, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &517476774
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517476771}
+  m_CullTransparentMesh: 0
 --- !u!1 &537045164
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,6 +9006,8 @@ GameObject:
   - component: {fileID: 559762091}
   - component: {fileID: 559762090}
   - component: {fileID: 559762089}
+  - component: {fileID: 559762095}
+  - component: {fileID: 559762094}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (8)"
   m_TagString: Ground
@@ -8010,9 +9118,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &559762094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559762087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &559762095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559762087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &565878931
 GameObject:
   m_ObjectHideFlags: 0
@@ -8027,6 +9170,8 @@ GameObject:
   - component: {fileID: 565878935}
   - component: {fileID: 565878934}
   - component: {fileID: 565878933}
+  - component: {fileID: 565878939}
+  - component: {fileID: 565878938}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (20)"
   m_TagString: Ground
@@ -8137,9 +9282,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &565878938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565878931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &565878939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565878931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &573070670
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,6 +9334,8 @@ GameObject:
   - component: {fileID: 573070674}
   - component: {fileID: 573070673}
   - component: {fileID: 573070672}
+  - component: {fileID: 573070678}
+  - component: {fileID: 573070677}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (13)"
   m_TagString: Ground
@@ -8264,9 +9446,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &573070677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573070670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &573070678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573070670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &588563148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8380,10 +9597,10 @@ GameObject:
   - component: {fileID: 608867260}
   - component: {fileID: 608867258}
   - component: {fileID: 608867257}
-  - component: {fileID: 608867262}
-  - component: {fileID: 608867261}
   - component: {fileID: 608867256}
   - component: {fileID: 608867263}
+  - component: {fileID: 608867262}
+  - component: {fileID: 608867261}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01"
   m_TagString: Ground
@@ -8480,6 +9697,7 @@ MonoBehaviour:
   mouseWeelSpeed: 1
   fallingObj: {fileID: 1126192080}
   handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
   gear_boom: {fileID: 1382239834}
 --- !u!114 &608867261
 MonoBehaviour:
@@ -8545,6 +9763,8 @@ GameObject:
   - component: {fileID: 647388718}
   - component: {fileID: 647388717}
   - component: {fileID: 647388716}
+  - component: {fileID: 647388722}
+  - component: {fileID: 647388721}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (24)"
   m_TagString: Ground
@@ -8655,9 +9875,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &647388721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647388714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &647388722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647388714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &658338631
 GameObject:
   m_ObjectHideFlags: 0
@@ -8672,6 +9927,8 @@ GameObject:
   - component: {fileID: 658338635}
   - component: {fileID: 658338634}
   - component: {fileID: 658338633}
+  - component: {fileID: 658338639}
+  - component: {fileID: 658338638}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (2)"
   m_TagString: Ground
@@ -8782,9 +10039,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &658338638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658338631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &658338639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658338631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &691783346
 GameObject:
   m_ObjectHideFlags: 0
@@ -8799,6 +10091,8 @@ GameObject:
   - component: {fileID: 691783350}
   - component: {fileID: 691783349}
   - component: {fileID: 691783348}
+  - component: {fileID: 691783354}
+  - component: {fileID: 691783353}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (19)"
   m_TagString: Ground
@@ -8909,9 +10203,119 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &691783353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691783346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &691783354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691783346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!1 &734984647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734984648}
+  - component: {fileID: 734984650}
+  - component: {fileID: 734984649}
+  m_Layer: 5
+  m_Name: H3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &734984648
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734984647}
+  m_LocalRotation: {x: 0.000000029802315, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_Children:
+  - {fileID: 12188313}
+  m_Father: {fileID: 96217696}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &734984649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734984647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: e4f912a7c676cd04d8104fa3dc2889af, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &734984650
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734984647}
+  m_CullTransparentMesh: 0
 --- !u!1 &737730338
 GameObject:
   m_ObjectHideFlags: 0
@@ -8926,6 +10330,8 @@ GameObject:
   - component: {fileID: 737730342}
   - component: {fileID: 737730341}
   - component: {fileID: 737730340}
+  - component: {fileID: 737730346}
+  - component: {fileID: 737730345}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (11)"
   m_TagString: Ground
@@ -9036,9 +10442,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &737730345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737730338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &737730346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737730338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &748822754
 GameObject:
   m_ObjectHideFlags: 0
@@ -9053,6 +10494,8 @@ GameObject:
   - component: {fileID: 748822758}
   - component: {fileID: 748822757}
   - component: {fileID: 748822756}
+  - component: {fileID: 748822762}
+  - component: {fileID: 748822761}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (12)"
   m_TagString: Ground
@@ -9163,9 +10606,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &748822761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748822754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &748822762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748822754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &755465236
 GameObject:
   m_ObjectHideFlags: 0
@@ -9180,6 +10658,8 @@ GameObject:
   - component: {fileID: 755465240}
   - component: {fileID: 755465239}
   - component: {fileID: 755465238}
+  - component: {fileID: 755465244}
+  - component: {fileID: 755465243}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (2)"
   m_TagString: Ground
@@ -9290,9 +10770,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &755465243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755465236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &755465244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755465236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &765154671
 GameObject:
   m_ObjectHideFlags: 0
@@ -9307,6 +10822,8 @@ GameObject:
   - component: {fileID: 765154675}
   - component: {fileID: 765154674}
   - component: {fileID: 765154673}
+  - component: {fileID: 765154679}
+  - component: {fileID: 765154678}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (8)"
   m_TagString: Ground
@@ -9417,9 +10934,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &765154678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765154671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &765154679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765154671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &819494852
 GameObject:
   m_ObjectHideFlags: 0
@@ -9434,6 +10986,8 @@ GameObject:
   - component: {fileID: 819494856}
   - component: {fileID: 819494855}
   - component: {fileID: 819494854}
+  - component: {fileID: 819494860}
+  - component: {fileID: 819494859}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (5)"
   m_TagString: Ground
@@ -9544,9 +11098,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &819494859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819494852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &819494860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819494852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &842101953
 GameObject:
   m_ObjectHideFlags: 0
@@ -9561,6 +11150,8 @@ GameObject:
   - component: {fileID: 842101957}
   - component: {fileID: 842101956}
   - component: {fileID: 842101955}
+  - component: {fileID: 842101961}
+  - component: {fileID: 842101960}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (5)"
   m_TagString: Ground
@@ -9671,9 +11262,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &842101960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842101953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &842101961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842101953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &845423082
 GameObject:
   m_ObjectHideFlags: 0
@@ -9688,6 +11314,8 @@ GameObject:
   - component: {fileID: 845423086}
   - component: {fileID: 845423085}
   - component: {fileID: 845423084}
+  - component: {fileID: 845423090}
+  - component: {fileID: 845423089}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (12)"
   m_TagString: Ground
@@ -9798,9 +11426,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &845423089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845423082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &845423090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845423082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &847376023 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8224947856885934286, guid: aa2dcd928c87f4644846c13fafc73dac,
@@ -9821,6 +11484,8 @@ GameObject:
   - component: {fileID: 856704243}
   - component: {fileID: 856704242}
   - component: {fileID: 856704241}
+  - component: {fileID: 856704247}
+  - component: {fileID: 856704246}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (18)"
   m_TagString: Ground
@@ -9931,9 +11596,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &856704246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856704239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &856704247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856704239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &862104141
 GameObject:
   m_ObjectHideFlags: 0
@@ -10052,6 +11752,8 @@ GameObject:
   - component: {fileID: 872125373}
   - component: {fileID: 872125372}
   - component: {fileID: 872125371}
+  - component: {fileID: 872125377}
+  - component: {fileID: 872125376}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (30)"
   m_TagString: Ground
@@ -10162,9 +11864,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &872125376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872125369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &872125377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872125369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &924390588
 GameObject:
   m_ObjectHideFlags: 0
@@ -10179,6 +11916,8 @@ GameObject:
   - component: {fileID: 924390592}
   - component: {fileID: 924390591}
   - component: {fileID: 924390590}
+  - component: {fileID: 924390596}
+  - component: {fileID: 924390595}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (9)"
   m_TagString: Ground
@@ -10289,9 +12028,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &924390595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924390588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &924390596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924390588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &936490344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10306,6 +12080,8 @@ GameObject:
   - component: {fileID: 936490348}
   - component: {fileID: 936490347}
   - component: {fileID: 936490346}
+  - component: {fileID: 936490352}
+  - component: {fileID: 936490351}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (5)"
   m_TagString: Ground
@@ -10416,9 +12192,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &936490351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936490344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &936490352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936490344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &949968806
 GameObject:
   m_ObjectHideFlags: 0
@@ -10433,6 +12244,8 @@ GameObject:
   - component: {fileID: 949968810}
   - component: {fileID: 949968809}
   - component: {fileID: 949968808}
+  - component: {fileID: 949968814}
+  - component: {fileID: 949968813}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (7)"
   m_TagString: Ground
@@ -10543,9 +12356,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &949968813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949968806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &949968814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949968806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &953142975
 GameObject:
   m_ObjectHideFlags: 0
@@ -10560,6 +12408,8 @@ GameObject:
   - component: {fileID: 953142979}
   - component: {fileID: 953142978}
   - component: {fileID: 953142977}
+  - component: {fileID: 953142983}
+  - component: {fileID: 953142982}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (24)"
   m_TagString: Ground
@@ -10670,9 +12520,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &953142982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953142975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &953142983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953142975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &963557599
 GameObject:
   m_ObjectHideFlags: 0
@@ -15384,7 +17269,7 @@ Transform:
   - {fileID: 1109934692}
   - {fileID: 154239715}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &970726496
 GameObject:
@@ -15400,6 +17285,8 @@ GameObject:
   - component: {fileID: 970726500}
   - component: {fileID: 970726499}
   - component: {fileID: 970726498}
+  - component: {fileID: 970726504}
+  - component: {fileID: 970726503}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (7)"
   m_TagString: Ground
@@ -15510,9 +17397,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &970726503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970726496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &970726504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970726496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &971519544
 GameObject:
   m_ObjectHideFlags: 0
@@ -15527,6 +17449,8 @@ GameObject:
   - component: {fileID: 971519548}
   - component: {fileID: 971519547}
   - component: {fileID: 971519546}
+  - component: {fileID: 971519552}
+  - component: {fileID: 971519551}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (32)"
   m_TagString: Ground
@@ -15637,9 +17561,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &971519551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971519544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &971519552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971519544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &973957373
 GameObject:
   m_ObjectHideFlags: 0
@@ -15654,6 +17613,8 @@ GameObject:
   - component: {fileID: 973957377}
   - component: {fileID: 973957376}
   - component: {fileID: 973957375}
+  - component: {fileID: 973957381}
+  - component: {fileID: 973957380}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (21)"
   m_TagString: Ground
@@ -15764,9 +17725,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &973957380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973957373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &973957381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973957373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &997853640
 GameObject:
   m_ObjectHideFlags: 0
@@ -15781,6 +17777,8 @@ GameObject:
   - component: {fileID: 997853644}
   - component: {fileID: 997853643}
   - component: {fileID: 997853642}
+  - component: {fileID: 997853648}
+  - component: {fileID: 997853647}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (17)"
   m_TagString: Ground
@@ -15891,9 +17889,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &997853647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997853640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &997853648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997853640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1016315106
 GameObject:
   m_ObjectHideFlags: 0
@@ -15908,6 +17941,8 @@ GameObject:
   - component: {fileID: 1016315110}
   - component: {fileID: 1016315109}
   - component: {fileID: 1016315108}
+  - component: {fileID: 1016315114}
+  - component: {fileID: 1016315113}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (6)"
   m_TagString: Ground
@@ -16018,9 +18053,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1016315113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016315106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1016315114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016315106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1019637769
 GameObject:
   m_ObjectHideFlags: 0
@@ -16035,6 +18105,8 @@ GameObject:
   - component: {fileID: 1019637773}
   - component: {fileID: 1019637772}
   - component: {fileID: 1019637771}
+  - component: {fileID: 1019637777}
+  - component: {fileID: 1019637776}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (11)"
   m_TagString: Ground
@@ -16145,9 +18217,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1019637776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019637769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1019637777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019637769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1028735078
 GameObject:
   m_ObjectHideFlags: 0
@@ -16162,6 +18269,8 @@ GameObject:
   - component: {fileID: 1028735082}
   - component: {fileID: 1028735081}
   - component: {fileID: 1028735080}
+  - component: {fileID: 1028735086}
+  - component: {fileID: 1028735085}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (10)"
   m_TagString: Ground
@@ -16272,9 +18381,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1028735085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028735078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1028735086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028735078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1045442913
 GameObject:
   m_ObjectHideFlags: 0
@@ -16289,6 +18433,8 @@ GameObject:
   - component: {fileID: 1045442917}
   - component: {fileID: 1045442916}
   - component: {fileID: 1045442915}
+  - component: {fileID: 1045442921}
+  - component: {fileID: 1045442920}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (16)"
   m_TagString: Ground
@@ -16399,9 +18545,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1045442920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045442913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1045442921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045442913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1047478544
 GameObject:
   m_ObjectHideFlags: 0
@@ -16416,6 +18597,8 @@ GameObject:
   - component: {fileID: 1047478548}
   - component: {fileID: 1047478547}
   - component: {fileID: 1047478546}
+  - component: {fileID: 1047478552}
+  - component: {fileID: 1047478551}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (18)"
   m_TagString: Ground
@@ -16526,9 +18709,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1047478551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047478544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1047478552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047478544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1109934691
 GameObject:
   m_ObjectHideFlags: 0
@@ -21072,6 +23290,8 @@ GameObject:
   - component: {fileID: 1126192083}
   - component: {fileID: 1126192082}
   - component: {fileID: 1126192081}
+  - component: {fileID: 1126192086}
+  - component: {fileID: 1126192085}
   m_Layer: 0
   m_Name: "\u9F52\u8F2Adrop"
   m_TagString: Untagged
@@ -21150,6 +23370,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1126192085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126192080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.9999999, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!54 &1126192086
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126192080}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1128619121
 GameObject:
   m_ObjectHideFlags: 0
@@ -21164,6 +23413,8 @@ GameObject:
   - component: {fileID: 1128619125}
   - component: {fileID: 1128619124}
   - component: {fileID: 1128619123}
+  - component: {fileID: 1128619129}
+  - component: {fileID: 1128619128}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (20)"
   m_TagString: Ground
@@ -21274,9 +23525,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1128619128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128619121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1128619129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128619121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1135347335
 GameObject:
   m_ObjectHideFlags: 0
@@ -21291,6 +23577,8 @@ GameObject:
   - component: {fileID: 1135347339}
   - component: {fileID: 1135347338}
   - component: {fileID: 1135347337}
+  - component: {fileID: 1135347343}
+  - component: {fileID: 1135347342}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (1)"
   m_TagString: Ground
@@ -21401,9 +23689,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1135347342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135347335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1135347343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135347335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1135862350
 GameObject:
   m_ObjectHideFlags: 0
@@ -21418,6 +23741,8 @@ GameObject:
   - component: {fileID: 1135862354}
   - component: {fileID: 1135862353}
   - component: {fileID: 1135862352}
+  - component: {fileID: 1135862358}
+  - component: {fileID: 1135862357}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (26)"
   m_TagString: Ground
@@ -21528,9 +23853,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1135862357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135862350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1135862358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135862350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1139716600
 GameObject:
   m_ObjectHideFlags: 0
@@ -21545,6 +23905,8 @@ GameObject:
   - component: {fileID: 1139716604}
   - component: {fileID: 1139716603}
   - component: {fileID: 1139716602}
+  - component: {fileID: 1139716608}
+  - component: {fileID: 1139716607}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (15)"
   m_TagString: Ground
@@ -21655,9 +24017,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1139716607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139716600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1139716608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139716600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1181702744
 GameObject:
   m_ObjectHideFlags: 0
@@ -21780,6 +24177,8 @@ GameObject:
   - component: {fileID: 1235601674}
   - component: {fileID: 1235601673}
   - component: {fileID: 1235601672}
+  - component: {fileID: 1235601678}
+  - component: {fileID: 1235601677}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (13)"
   m_TagString: Ground
@@ -21890,9 +24289,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1235601677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235601670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1235601678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235601670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1276537341
 GameObject:
   m_ObjectHideFlags: 0
@@ -21907,6 +24341,8 @@ GameObject:
   - component: {fileID: 1276537345}
   - component: {fileID: 1276537344}
   - component: {fileID: 1276537343}
+  - component: {fileID: 1276537349}
+  - component: {fileID: 1276537348}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (4)"
   m_TagString: Ground
@@ -22017,9 +24453,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1276537348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276537341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1276537349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276537341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1286775990
 GameObject:
   m_ObjectHideFlags: 0
@@ -22034,6 +24505,8 @@ GameObject:
   - component: {fileID: 1286775994}
   - component: {fileID: 1286775993}
   - component: {fileID: 1286775992}
+  - component: {fileID: 1286775998}
+  - component: {fileID: 1286775997}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (21)"
   m_TagString: Ground
@@ -22144,9 +24617,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1286775997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286775990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1286775998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286775990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1290413218
 GameObject:
   m_ObjectHideFlags: 0
@@ -22161,6 +24669,8 @@ GameObject:
   - component: {fileID: 1290413222}
   - component: {fileID: 1290413221}
   - component: {fileID: 1290413220}
+  - component: {fileID: 1290413226}
+  - component: {fileID: 1290413225}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (9)"
   m_TagString: Ground
@@ -22271,9 +24781,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1290413225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290413218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1290413226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290413218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1302163822
 GameObject:
   m_ObjectHideFlags: 0
@@ -22288,6 +24833,8 @@ GameObject:
   - component: {fileID: 1302163826}
   - component: {fileID: 1302163825}
   - component: {fileID: 1302163824}
+  - component: {fileID: 1302163830}
+  - component: {fileID: 1302163829}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (14)"
   m_TagString: Ground
@@ -22398,9 +24945,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1302163829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302163822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1302163830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302163822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1318509937
 GameObject:
   m_ObjectHideFlags: 0
@@ -22415,6 +24997,8 @@ GameObject:
   - component: {fileID: 1318509941}
   - component: {fileID: 1318509940}
   - component: {fileID: 1318509939}
+  - component: {fileID: 1318509945}
+  - component: {fileID: 1318509944}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (23)"
   m_TagString: Ground
@@ -22525,9 +25109,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1318509944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318509937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1318509945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318509937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1321557920
 GameObject:
   m_ObjectHideFlags: 0
@@ -22542,6 +25161,8 @@ GameObject:
   - component: {fileID: 1321557924}
   - component: {fileID: 1321557923}
   - component: {fileID: 1321557922}
+  - component: {fileID: 1321557928}
+  - component: {fileID: 1321557927}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (4)"
   m_TagString: Ground
@@ -22652,9 +25273,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1321557927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321557920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1321557928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321557920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1325946132
 GameObject:
   m_ObjectHideFlags: 0
@@ -22738,6 +25394,8 @@ GameObject:
   - component: {fileID: 1349334827}
   - component: {fileID: 1349334826}
   - component: {fileID: 1349334825}
+  - component: {fileID: 1349334831}
+  - component: {fileID: 1349334830}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (15)"
   m_TagString: Ground
@@ -22848,9 +25506,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1349334830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349334823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1349334831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349334823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1352444164
 GameObject:
   m_ObjectHideFlags: 0
@@ -22865,6 +25558,8 @@ GameObject:
   - component: {fileID: 1352444168}
   - component: {fileID: 1352444167}
   - component: {fileID: 1352444166}
+  - component: {fileID: 1352444172}
+  - component: {fileID: 1352444171}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (1)"
   m_TagString: Ground
@@ -22975,9 +25670,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1352444171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352444164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1352444172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352444164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1374424302
 GameObject:
   m_ObjectHideFlags: 0
@@ -22992,6 +25722,8 @@ GameObject:
   - component: {fileID: 1374424306}
   - component: {fileID: 1374424305}
   - component: {fileID: 1374424304}
+  - component: {fileID: 1374424310}
+  - component: {fileID: 1374424309}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (27)"
   m_TagString: Ground
@@ -23102,9 +25834,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1374424309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374424302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1374424310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374424302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1382239834
 GameObject:
   m_ObjectHideFlags: 0
@@ -23240,6 +26007,8 @@ GameObject:
   - component: {fileID: 1384228856}
   - component: {fileID: 1384228855}
   - component: {fileID: 1384228854}
+  - component: {fileID: 1384228860}
+  - component: {fileID: 1384228859}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (9)"
   m_TagString: Ground
@@ -23350,9 +26119,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1384228859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384228852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1384228860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384228852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1394124125
 GameObject:
   m_ObjectHideFlags: 0
@@ -23367,6 +26171,8 @@ GameObject:
   - component: {fileID: 1394124129}
   - component: {fileID: 1394124128}
   - component: {fileID: 1394124127}
+  - component: {fileID: 1394124133}
+  - component: {fileID: 1394124132}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (14)"
   m_TagString: Ground
@@ -23477,9 +26283,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1394124132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394124125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1394124133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394124125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1409185081
 GameObject:
   m_ObjectHideFlags: 0
@@ -23494,6 +26335,8 @@ GameObject:
   - component: {fileID: 1409185085}
   - component: {fileID: 1409185084}
   - component: {fileID: 1409185083}
+  - component: {fileID: 1409185089}
+  - component: {fileID: 1409185088}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (33)"
   m_TagString: Ground
@@ -23604,9 +26447,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1409185088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409185081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1409185089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409185081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1425183552
 GameObject:
   m_ObjectHideFlags: 0
@@ -23621,6 +26499,8 @@ GameObject:
   - component: {fileID: 1425183556}
   - component: {fileID: 1425183555}
   - component: {fileID: 1425183554}
+  - component: {fileID: 1425183560}
+  - component: {fileID: 1425183559}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (6)"
   m_TagString: Ground
@@ -23731,9 +26611,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1425183559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425183552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1425183560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425183552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1462641289
 GameObject:
   m_ObjectHideFlags: 0
@@ -23748,6 +26663,8 @@ GameObject:
   - component: {fileID: 1462641293}
   - component: {fileID: 1462641292}
   - component: {fileID: 1462641291}
+  - component: {fileID: 1462641297}
+  - component: {fileID: 1462641296}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (9)"
   m_TagString: Ground
@@ -23858,9 +26775,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1462641296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462641289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1462641297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462641289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1489863419
 GameObject:
   m_ObjectHideFlags: 0
@@ -23875,6 +26827,8 @@ GameObject:
   - component: {fileID: 1489863423}
   - component: {fileID: 1489863422}
   - component: {fileID: 1489863421}
+  - component: {fileID: 1489863427}
+  - component: {fileID: 1489863426}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (4)"
   m_TagString: Ground
@@ -23985,9 +26939,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1489863426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489863419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1489863427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489863419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1513933750
 GameObject:
   m_ObjectHideFlags: 0
@@ -24002,6 +26991,8 @@ GameObject:
   - component: {fileID: 1513933754}
   - component: {fileID: 1513933753}
   - component: {fileID: 1513933752}
+  - component: {fileID: 1513933758}
+  - component: {fileID: 1513933757}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (3)"
   m_TagString: Ground
@@ -24112,9 +27103,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1513933757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513933750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1513933758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513933750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1557084334
 GameObject:
   m_ObjectHideFlags: 0
@@ -24220,6 +27246,8 @@ GameObject:
   - component: {fileID: 1557852639}
   - component: {fileID: 1557852638}
   - component: {fileID: 1557852637}
+  - component: {fileID: 1557852643}
+  - component: {fileID: 1557852642}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (1)"
   m_TagString: Ground
@@ -24330,9 +27358,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1557852642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557852635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1557852643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557852635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1558175702
 GameObject:
   m_ObjectHideFlags: 0
@@ -24347,6 +27410,8 @@ GameObject:
   - component: {fileID: 1558175704}
   - component: {fileID: 1558175703}
   - component: {fileID: 1558175708}
+  - component: {fileID: 1558175710}
+  - component: {fileID: 1558175709}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04"
   m_TagString: Ground
@@ -24441,9 +27506,10 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
 --- !u!54 &1558175708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24460,6 +27526,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1558175709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558175702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1558175710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558175702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1584895539
 GameObject:
   m_ObjectHideFlags: 0
@@ -24474,6 +27574,8 @@ GameObject:
   - component: {fileID: 1584895543}
   - component: {fileID: 1584895542}
   - component: {fileID: 1584895541}
+  - component: {fileID: 1584895547}
+  - component: {fileID: 1584895546}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (19)"
   m_TagString: Ground
@@ -24584,9 +27686,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1584895546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584895539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1584895547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584895539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1598858181
 GameObject:
   m_ObjectHideFlags: 0
@@ -24601,6 +27738,8 @@ GameObject:
   - component: {fileID: 1598858185}
   - component: {fileID: 1598858184}
   - component: {fileID: 1598858183}
+  - component: {fileID: 1598858189}
+  - component: {fileID: 1598858188}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (36)"
   m_TagString: Ground
@@ -24711,9 +27850,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1598858188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598858181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1598858189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598858181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1601010798
 GameObject:
   m_ObjectHideFlags: 0
@@ -24728,6 +27902,8 @@ GameObject:
   - component: {fileID: 1601010802}
   - component: {fileID: 1601010801}
   - component: {fileID: 1601010800}
+  - component: {fileID: 1601010806}
+  - component: {fileID: 1601010805}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (12)"
   m_TagString: Ground
@@ -24838,9 +28014,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1601010805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601010798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1601010806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601010798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &1611491967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24940,6 +28151,8 @@ GameObject:
   - component: {fileID: 1638528755}
   - component: {fileID: 1638528754}
   - component: {fileID: 1638528753}
+  - component: {fileID: 1638528759}
+  - component: {fileID: 1638528758}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (22)"
   m_TagString: Ground
@@ -25050,9 +28263,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1638528758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638528751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1638528759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638528751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1646587187
 GameObject:
   m_ObjectHideFlags: 0
@@ -25067,6 +28315,8 @@ GameObject:
   - component: {fileID: 1646587191}
   - component: {fileID: 1646587190}
   - component: {fileID: 1646587189}
+  - component: {fileID: 1646587195}
+  - component: {fileID: 1646587194}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (17)"
   m_TagString: Ground
@@ -25177,9 +28427,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1646587194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646587187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1646587195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646587187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1647527358
 GameObject:
   m_ObjectHideFlags: 0
@@ -25194,6 +28479,8 @@ GameObject:
   - component: {fileID: 1647527362}
   - component: {fileID: 1647527361}
   - component: {fileID: 1647527360}
+  - component: {fileID: 1647527366}
+  - component: {fileID: 1647527365}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (14)"
   m_TagString: Ground
@@ -25304,9 +28591,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1647527365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647527358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1647527366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647527358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1693710963
 GameObject:
   m_ObjectHideFlags: 0
@@ -25321,6 +28643,8 @@ GameObject:
   - component: {fileID: 1693710967}
   - component: {fileID: 1693710966}
   - component: {fileID: 1693710965}
+  - component: {fileID: 1693710971}
+  - component: {fileID: 1693710970}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (3)"
   m_TagString: Ground
@@ -25431,9 +28755,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1693710970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693710963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1693710971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693710963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1727347991
 GameObject:
   m_ObjectHideFlags: 0
@@ -25448,6 +28807,8 @@ GameObject:
   - component: {fileID: 1727347995}
   - component: {fileID: 1727347994}
   - component: {fileID: 1727347993}
+  - component: {fileID: 1727347999}
+  - component: {fileID: 1727347998}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (24)"
   m_TagString: Ground
@@ -25558,9 +28919,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1727347998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727347991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1727347999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727347991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1767627227
 GameObject:
   m_ObjectHideFlags: 0
@@ -25575,6 +28971,8 @@ GameObject:
   - component: {fileID: 1767627231}
   - component: {fileID: 1767627230}
   - component: {fileID: 1767627229}
+  - component: {fileID: 1767627235}
+  - component: {fileID: 1767627234}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (7)"
   m_TagString: Ground
@@ -25685,9 +29083,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1767627234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767627227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1767627235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767627227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1784741363
 GameObject:
   m_ObjectHideFlags: 0
@@ -25702,6 +29135,8 @@ GameObject:
   - component: {fileID: 1784741367}
   - component: {fileID: 1784741366}
   - component: {fileID: 1784741365}
+  - component: {fileID: 1784741371}
+  - component: {fileID: 1784741370}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (12)"
   m_TagString: Ground
@@ -25812,9 +29247,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1784741370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784741363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1784741371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784741363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1790025225
 GameObject:
   m_ObjectHideFlags: 0
@@ -25957,6 +29427,8 @@ GameObject:
   - component: {fileID: 1804594708}
   - component: {fileID: 1804594707}
   - component: {fileID: 1804594712}
+  - component: {fileID: 1804594714}
+  - component: {fileID: 1804594713}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03"
   m_TagString: Ground
@@ -26051,9 +29523,10 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
 --- !u!54 &1804594712
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26070,6 +29543,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1804594713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804594706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1804594714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804594706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1846930310
 GameObject:
   m_ObjectHideFlags: 0
@@ -26175,6 +29682,8 @@ GameObject:
   - component: {fileID: 1849714483}
   - component: {fileID: 1849714482}
   - component: {fileID: 1849714481}
+  - component: {fileID: 1849714487}
+  - component: {fileID: 1849714486}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (11)"
   m_TagString: Ground
@@ -26285,9 +29794,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1849714486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849714479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1849714487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849714479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1857711272
 GameObject:
   m_ObjectHideFlags: 0
@@ -26302,6 +29846,8 @@ GameObject:
   - component: {fileID: 1857711276}
   - component: {fileID: 1857711275}
   - component: {fileID: 1857711274}
+  - component: {fileID: 1857711280}
+  - component: {fileID: 1857711279}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (25)"
   m_TagString: Ground
@@ -26412,9 +29958,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1857711279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857711272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1857711280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857711272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1879071509
 GameObject:
   m_ObjectHideFlags: 0
@@ -26429,6 +30010,8 @@ GameObject:
   - component: {fileID: 1879071513}
   - component: {fileID: 1879071512}
   - component: {fileID: 1879071511}
+  - component: {fileID: 1879071517}
+  - component: {fileID: 1879071516}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (31)"
   m_TagString: Ground
@@ -26539,9 +30122,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1879071516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879071509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1879071517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879071509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1892642241
 GameObject:
   m_ObjectHideFlags: 0
@@ -26556,6 +30174,8 @@ GameObject:
   - component: {fileID: 1892642245}
   - component: {fileID: 1892642244}
   - component: {fileID: 1892642243}
+  - component: {fileID: 1892642249}
+  - component: {fileID: 1892642248}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (6)"
   m_TagString: Ground
@@ -26666,9 +30286,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1892642248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892642241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1892642249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892642241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &1912374933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26748,6 +30403,8 @@ GameObject:
   - component: {fileID: 1920128971}
   - component: {fileID: 1920128970}
   - component: {fileID: 1920128969}
+  - component: {fileID: 1920128975}
+  - component: {fileID: 1920128974}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (13)"
   m_TagString: Ground
@@ -26858,9 +30515,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1920128974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920128967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1920128975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920128967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1930607046
 GameObject:
   m_ObjectHideFlags: 0
@@ -26875,6 +30567,8 @@ GameObject:
   - component: {fileID: 1930607050}
   - component: {fileID: 1930607049}
   - component: {fileID: 1930607048}
+  - component: {fileID: 1930607054}
+  - component: {fileID: 1930607053}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (2)"
   m_TagString: Ground
@@ -26985,9 +30679,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1930607053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930607046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1930607054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930607046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1936691671
 GameObject:
   m_ObjectHideFlags: 0
@@ -27002,6 +30731,8 @@ GameObject:
   - component: {fileID: 1936691675}
   - component: {fileID: 1936691674}
   - component: {fileID: 1936691673}
+  - component: {fileID: 1936691679}
+  - component: {fileID: 1936691678}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (21)"
   m_TagString: Ground
@@ -27112,9 +30843,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1936691678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936691671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1936691679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936691671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1938227326
 GameObject:
   m_ObjectHideFlags: 0
@@ -27129,6 +30895,8 @@ GameObject:
   - component: {fileID: 1938227330}
   - component: {fileID: 1938227329}
   - component: {fileID: 1938227328}
+  - component: {fileID: 1938227334}
+  - component: {fileID: 1938227333}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (8)"
   m_TagString: Ground
@@ -27239,9 +31007,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1938227333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938227326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1938227334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938227326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1950556344
 GameObject:
   m_ObjectHideFlags: 0
@@ -27256,6 +31059,8 @@ GameObject:
   - component: {fileID: 1950556348}
   - component: {fileID: 1950556347}
   - component: {fileID: 1950556346}
+  - component: {fileID: 1950556352}
+  - component: {fileID: 1950556351}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (23)"
   m_TagString: Ground
@@ -27366,9 +31171,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1950556351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950556344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1950556352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950556344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1985644786
 GameObject:
   m_ObjectHideFlags: 0
@@ -27474,6 +31314,8 @@ GameObject:
   - component: {fileID: 1989198512}
   - component: {fileID: 1989198511}
   - component: {fileID: 1989198510}
+  - component: {fileID: 1989198516}
+  - component: {fileID: 1989198515}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (10)"
   m_TagString: Ground
@@ -27584,9 +31426,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &1989198515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989198508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1989198516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989198508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2009249525
 GameObject:
   m_ObjectHideFlags: 0
@@ -27601,6 +31478,8 @@ GameObject:
   - component: {fileID: 2009249529}
   - component: {fileID: 2009249528}
   - component: {fileID: 2009249527}
+  - component: {fileID: 2009249533}
+  - component: {fileID: 2009249532}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (22)"
   m_TagString: Ground
@@ -27711,9 +31590,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2009249532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009249525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2009249533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009249525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2011101654
 GameObject:
   m_ObjectHideFlags: 0
@@ -27728,6 +31642,8 @@ GameObject:
   - component: {fileID: 2011101658}
   - component: {fileID: 2011101657}
   - component: {fileID: 2011101656}
+  - component: {fileID: 2011101662}
+  - component: {fileID: 2011101661}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (6)"
   m_TagString: Ground
@@ -27838,9 +31754,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2011101661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011101654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2011101662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011101654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2021943741
 GameObject:
   m_ObjectHideFlags: 0
@@ -27946,6 +31897,8 @@ GameObject:
   - component: {fileID: 2030224766}
   - component: {fileID: 2030224765}
   - component: {fileID: 2030224764}
+  - component: {fileID: 2030224770}
+  - component: {fileID: 2030224769}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (8)"
   m_TagString: Ground
@@ -28056,9 +32009,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2030224769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030224762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2030224770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030224762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2061872648
 GameObject:
   m_ObjectHideFlags: 0
@@ -28073,6 +32061,8 @@ GameObject:
   - component: {fileID: 2061872652}
   - component: {fileID: 2061872651}
   - component: {fileID: 2061872650}
+  - component: {fileID: 2061872656}
+  - component: {fileID: 2061872655}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (16)"
   m_TagString: Ground
@@ -28183,9 +32173,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2061872655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061872648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2061872656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061872648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2067077893
 GameObject:
   m_ObjectHideFlags: 0
@@ -28200,6 +32225,8 @@ GameObject:
   - component: {fileID: 2067077897}
   - component: {fileID: 2067077896}
   - component: {fileID: 2067077895}
+  - component: {fileID: 2067077901}
+  - component: {fileID: 2067077900}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A04 (18)"
   m_TagString: Ground
@@ -28310,9 +32337,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2067077900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067077893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2067077901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067077893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2103418899
 GameObject:
   m_ObjectHideFlags: 0
@@ -28327,6 +32389,8 @@ GameObject:
   - component: {fileID: 2103418903}
   - component: {fileID: 2103418902}
   - component: {fileID: 2103418901}
+  - component: {fileID: 2103418907}
+  - component: {fileID: 2103418906}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A03 (10)"
   m_TagString: Ground
@@ -28437,9 +32501,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2103418906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103418899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2103418907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103418899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2103909682
 GameObject:
   m_ObjectHideFlags: 0
@@ -28454,6 +32553,8 @@ GameObject:
   - component: {fileID: 2103909686}
   - component: {fileID: 2103909685}
   - component: {fileID: 2103909684}
+  - component: {fileID: 2103909690}
+  - component: {fileID: 2103909689}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A02 (34)"
   m_TagString: Ground
@@ -28564,9 +32665,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2103909689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103909682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2103909690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103909682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2106077108
 GameObject:
   m_ObjectHideFlags: 0
@@ -28581,6 +32717,8 @@ GameObject:
   - component: {fileID: 2106077112}
   - component: {fileID: 2106077111}
   - component: {fileID: 2106077110}
+  - component: {fileID: 2106077116}
+  - component: {fileID: 2106077115}
   m_Layer: 0
   m_Name: "\u9F52\u8F2A01 (2)"
   m_TagString: Ground
@@ -28691,9 +32829,44 @@ MonoBehaviour:
   canControl: 0
   start_speed: 1
   mouseWeelSpeed: 1
-  fallingObj: {fileID: 0}
-  handObj: {fileID: 0}
-  gear_boom: {fileID: 0}
+  fallingObj: {fileID: 1126192080}
+  handObj: {fileID: 847376023}
+  playerObj: {fileID: 2872525931547647555}
+  gear_boom: {fileID: 1382239834}
+--- !u!114 &2106077115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106077108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2106077116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106077108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &2134600511
 GameObject:
   m_ObjectHideFlags: 0
@@ -28799,7 +32972,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &883863177084192209
 MeshFilter:
@@ -28832,7 +33005,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -30208,7 +34381,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5617084247230638225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

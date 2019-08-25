@@ -6,6 +6,8 @@ public class SceneManager : MonoBehaviour
 {
     public int SceneIndex;
 
+    private KeyCode Scene1 = KeyCode.F1, scene2= KeyCode.F2, scene3= KeyCode.F3;
+
     private float timer;
 
     private void Awake()
@@ -46,6 +48,23 @@ public class SceneManager : MonoBehaviour
                 SceneIndex++;
                 UnityEngine.SceneManagement.SceneManager.LoadScene(2);
             }
+        }
+
+
+        if (Input.GetKeyDown(Scene1))
+        {
+            SceneIndex = 0;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        }
+        if (Input.GetKeyDown(scene2))
+        {
+            SceneIndex = 1;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        }
+        if (Input.GetKeyDown(scene3))
+        {
+            SceneIndex = 2;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         }
     }
 }
