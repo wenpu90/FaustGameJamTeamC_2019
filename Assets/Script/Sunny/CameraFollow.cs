@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    private KeyCode initKey = KeyCode.Escape;
     public GameObject player;
     private Quaternion iniRotation;
     private bool isInit;
@@ -16,10 +17,18 @@ public class CameraFollow : MonoBehaviour
     {
         if(!isInit)
         {
-            iniRotation = transform.rotation;
+            transform.rotation = iniRotation;
             isInit = true;
             Debug.Log("CamInit");
         }
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 3, player.transform.position.z-3);
+
+        if(Input.GetKeyDown(initKey))
+        {
+            GetComponent<CamStartAnim>().TurnOffAnimator();
+            transform.rotation = iniRotation;
+            isInit = true;
+            Debug.Log("CamInit");
+        }
     }
 }

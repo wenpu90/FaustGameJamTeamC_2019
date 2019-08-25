@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CamStartAnim : MonoBehaviour
 {
+    public KeyCode skipStartAnim;
 
     private void OnEnable()
     {
@@ -11,7 +12,12 @@ public class CamStartAnim : MonoBehaviour
         Debug.Log("AnimStart");
     }
 
-    private void TurnOffAnimator()
+    private void Update()
+    {
+        //if(Input.GetKeyDown(skipStartAnim)) GetComponent<Animator>().enabled = false;
+    }
+
+    public void TurnOffAnimator()
     {
         GetComponent<Animator>().enabled = false;
     }
