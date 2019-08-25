@@ -49,12 +49,9 @@ public class ThisIsHand : MonoBehaviour
         moveDown
     }
 
-    AudioSource boom;
     [Range(0.01f,1f)]public float HandMoveSpeed;
-    // Start is called before the first frame update
     void Start()
     {
-        boom = GetComponent<AudioSource>();
     }
 
     private void OnEnable()

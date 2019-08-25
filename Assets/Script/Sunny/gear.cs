@@ -17,8 +17,13 @@ public class gear : MonoBehaviour, IPointerClickHandler
     float radius; //高度變化，最好小於0.3
     int plus_minus = 1;
 
+    AudioSource boom;
+    public GameObject sound;
+
     void Start()
     {
+        boom = sound.GetComponent<AudioSource>();
+
         if (handObj == null) handObj = GameObject.FindGameObjectWithTag("Enemy");
         start_speed = Random.Range(0f, 2f);
         radius = Random.Range(0.05f, 0.3f);
@@ -93,12 +98,17 @@ public class gear : MonoBehaviour, IPointerClickHandler
             transform.position = new Vector3(10000, 0, 0);
             gearFlyOut();
 
-            Invoke("PutBackObject_2", 10);
+            Invoke("PutBackObject_R", 10);
+            Invoke("boomSound", 4.3f);
         }
     }
 
 
-    public void PutBackObject_2()
+    public void boomSound()
+    {
+        boom.Play();
+    }
+    public void PutBackObject_R()
     {
         transform.position = oldPos;
         is_out = isflyout = false;
