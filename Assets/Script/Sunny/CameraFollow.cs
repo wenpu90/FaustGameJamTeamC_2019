@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
     void Awake()
     {
         isInit = false;
-        iniRotation = transform.rotation;
+        //iniRotation = transform.rotation;
     }
 
     [Range(0.1f, 10f)] public float LerpAmount;
@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour
     {
         if(!isInit)
         {
-            transform.rotation = iniRotation;
+            //transform.rotation = iniRotation;
             isInit = true;
             Debug.Log("CamInit");
         }
@@ -32,7 +32,7 @@ public class CameraFollow : MonoBehaviour
         if (Input.GetKeyDown(initKey))
         {
             GetComponent<CamStartAnim>().TurnOffAnimator();
-            transform.rotation = iniRotation;
+            //transform.rotation = iniRotation;
             isInit = true;
             Debug.Log("CamInit");
         }
@@ -41,7 +41,7 @@ public class CameraFollow : MonoBehaviour
     public void TurnOffAnimator()
     {
         GetComponent<CamStartAnim>().TurnOffAnimator();
-        transform.rotation = iniRotation;
+        //transform.rotation = iniRotation;
         isInit = true;
     }
 }
