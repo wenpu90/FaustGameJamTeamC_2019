@@ -14,7 +14,7 @@ public class Falling : MonoBehaviour
     void Init()
     {
         originalPointY=transform.position.y;
-        fallingPointY = transform.position.y-10;
+        fallingPointY = transform.position.y-3;
         posX = gameObject.transform.position.x;
         posZ = gameObject.transform.position.z;
     }
