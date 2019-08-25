@@ -355,6 +355,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -657,6 +662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -1127,6 +1137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1240,6 +1255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -2092,6 +2112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2212,6 +2237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2326,6 +2356,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -2843,6 +2878,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3006,6 +3046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -3242,6 +3287,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3430,6 +3480,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3549,6 +3604,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -3670,6 +3730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3789,6 +3854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -4060,6 +4130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -4376,6 +4451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -4804,6 +4884,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5050,6 +5135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5233,6 +5323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -5474,6 +5569,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5593,6 +5693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -5833,6 +5938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -6575,6 +6685,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7158,6 +7273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7283,6 +7403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -8681,6 +8806,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8991,6 +9121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9260,6 +9395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -9575,6 +9715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9694,6 +9839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -9847,6 +9997,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9961,6 +10116,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -10081,6 +10241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -10351,6 +10516,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -10686,6 +10856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10805,6 +10980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -10926,6 +11106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11039,6 +11224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -11160,6 +11350,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11279,6 +11474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -11635,6 +11835,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11989,8 +12194,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729674163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.87, y: -2.24, z: -7.43}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -1.85, y: 1.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2129254813}
   m_Father: {fileID: 0}
@@ -12013,6 +12218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}
@@ -12441,6 +12651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -13068,6 +13283,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13218,6 +13438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -13381,6 +13606,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -14171,7 +14401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba60db2f750b034dab9791e8f898e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1729674163}
   LerpAmount: 6.47
   upDis: 5.4
   backDis: 5.35
@@ -14202,6 +14432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -14375,6 +14610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cog3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14508,7 +14748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 830a6243cb58e90409560024a1db6053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerRadius: 2
+  powerRadius: 10
 --- !u!114 &2134600514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14670,6 +14910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798638047104322587, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1798638047103832123, guid: 3dabd91eb4f5974469d4329dcfa9e39c,
         type: 3}
@@ -14893,6 +15138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cog2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168913322842772196, guid: b008fd8d32616f54ba447e5c3b562eae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6168913322842279620, guid: b008fd8d32616f54ba447e5c3b562eae,
         type: 3}

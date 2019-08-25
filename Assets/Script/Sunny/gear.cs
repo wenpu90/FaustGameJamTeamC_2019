@@ -62,7 +62,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
             this.transform.Rotate(0 , 0, start_speed * plus_minus);
 
         }
-        if (playerObj.transform.position.y < -6)
+        if (playerObj.transform.position.y < -50)
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
     }
 
