@@ -37,4 +37,11 @@ public class CameraFollow : MonoBehaviour
             Debug.Log("CamInit");
         }
     }
+
+    public void TurnOffAnimator()
+    {
+        GetComponent<CamStartAnim>().TurnOffAnimator();
+        transform.rotation = iniRotation;
+        isInit = true;
+    }
 }
