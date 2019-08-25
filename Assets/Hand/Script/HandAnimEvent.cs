@@ -40,7 +40,7 @@ public class HandAnimEvent : MonoBehaviour
         particlePrefab.Clear();
         soundPrefab.Add( (GameObject)Resources.Load("Hand/DangerSFX"));
         soundPrefab.Add( (GameObject)Resources.Load("Hand/OnAttackSFX"));
-        soundPrefab.Add((GameObject)Resources.Load("Hand/JohnCenaSFX"));
+        soundPrefab.Add((GameObject)Resources.Load("Hand/apear"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/危!"));
         particlePrefab.Add((GameObject)Resources.Load("Hand/再來啊!"));
         //SetAttackColliderFalse();

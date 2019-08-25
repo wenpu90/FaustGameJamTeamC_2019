@@ -49,11 +49,12 @@ public class ThisIsHand : MonoBehaviour
         moveDown
     }
 
+    AudioSource boom;
     [Range(0.01f,1f)]public float HandMoveSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        
+        boom = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -110,6 +111,7 @@ public class ThisIsHand : MonoBehaviour
 
     private void OnStartAttack()
     {
+        boom.Play();
         if (BeAttackCount <= 10) StartCoroutine(MoveUp(() => SlamAttack()));
         if (BeAttackCount > 10) StartCoroutine(MoveUp(() => MiddleFingerAttack()));
     }
@@ -231,6 +233,7 @@ public class ThisIsHand : MonoBehaviour
     public IEnumerator MoveDown(System.Action next = null)
     {
         Debug.Log("HandDown");
+        
         var pos = originalPos-HandMoveOffset;
         var targetPos = new Vector3(transform.position.x, pos.y, transform.position.z);
         while (transform.position.y > targetPos.y+0.01f)
