@@ -673,7 +673,7 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 2.9777777
+  - time: 2.911111
     functionName: TurnOffAnimator
     data: 
     objectReferenceParameter: {fileID: 0}
