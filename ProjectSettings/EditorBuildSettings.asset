@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Script/Sunny/test01.unity
-    guid: 70b977e830fdcca47b664341fdbd116f
-  - enabled: 1
-    path: Assets/Script/Sunny/FinalBoss.unity
-    guid: 06a185d6d94dc04419a0560630eaf62b
-  - enabled: 1
-    path: Assets/Script/Sunny/EndScene.unity
-    guid: 69a4368e80e6365499ae68d109db2e3b
+    path: Assets/aaaaa/room.unity
+    guid: e04c5328a7ef2e1409557f9140ffa6d2
   m_configObjects: {}
