@@ -32,12 +32,7 @@ public class SceneManager : MonoBehaviour
             
         }
 
-        if(SceneIndex == 0 && Input.GetKeyDown(KeyCode.F11))
-        {
-            SceneIndex++;
 
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        }
 
         if (SceneIndex == 1)
         {
