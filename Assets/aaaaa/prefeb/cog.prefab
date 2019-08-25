@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canControl: 0
   start_speed: 0
+  sound: {fileID: 0}
   mouseWeelSpeed: 1
   fallingObj: {fileID: 0}
   handObj: {fileID: 0}
