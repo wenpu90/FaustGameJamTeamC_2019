@@ -23,7 +23,7 @@ public class gear : MonoBehaviour, IPointerClickHandler
     void Start()
     {
         if (handObj == null) handObj = GameObject.FindGameObjectWithTag("Enemy");
-        start_speed = Random.Range(0f, 2f);
+        start_speed = Random.Range(0f, 1f);
         radius = Random.Range(0.05f, 0.3f);
         perRadian= Random.Range(1f, 3f);
         oldPos = transform.position; // 保存最初的位置
@@ -49,15 +49,19 @@ public class gear : MonoBehaviour, IPointerClickHandler
 
             if (Input.GetAxis("Mouse ScrollWheel") != 0)
             {
-                mouseWeelSpeed+= Input.GetAxis("Mouse ScrollWheel")*5;
-                start_speed = (start_speed* Time.deltaTime) + mouseWeelSpeed;
+                mouseWeelSpeed+= Input.GetAxis("Mouse ScrollWheel")*2;
+                start_speed = start_speed*Time.deltaTime + mouseWeelSpeed;
 
-                if (mouseWeelSpeed < -10)
-                    mouseWeelSpeed = -10;
-                else if (mouseWeelSpeed > 10)
-                    mouseWeelSpeed = 10;
+                if (start_speed < -2)
+                    start_speed = -2;
+                else if (start_speed > 2)
+                    start_speed = 2;
+                if (mouseWeelSpeed < -2)
+                    mouseWeelSpeed = -2;
+                else if (mouseWeelSpeed > 2)
+                    mouseWeelSpeed = 2;
             }
-            this.transform.Rotate(0 , 0, start_speed * plus_minus);
+            this.transform.Rotate(0 , 0, plus_minus*start_speed);
 
         }
         if (playerObj.transform.position.y < -50)
