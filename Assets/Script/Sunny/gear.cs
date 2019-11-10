@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class gear : MonoBehaviour, IPointerClickHandler
 {
@@ -135,7 +136,6 @@ public class gear : MonoBehaviour, IPointerClickHandler
         playerObj.GetComponent<Rigidbody>().AddForce(new Vector3(1, 2, 1)*10);
 
     }
-
     
 
 }
